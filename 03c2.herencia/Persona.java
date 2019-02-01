@@ -7,11 +7,6 @@ public class Persona
     String nombre;
     int edad;
 
-    public Persona()
-    {
-        
-    }
-
     //Constructor
     public Persona(String nombre, int edad)
     {
@@ -73,9 +68,11 @@ public class Persona
         return this.formatear(""+atributo);
     }
 
+
     public String getInfo()
     {
-    	return "Nombre: " + this.formatear(nombre) + "\nEdad: " + this.formatear(edad) + "\nCiudad: " + CIUDAD + "<br />"; 
+    	return "Nombre............" + this.formatear(nombre) + "\nEdad..........." +
+         this.formatear(edad) + "\nCiudad........." + CIUDAD + "<br />"; 
     }
 
 }

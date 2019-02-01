@@ -12,29 +12,32 @@ public class AppPersona
         Persona persona2= new Persona(22, "Luis");
         Persona persona3 = new Persona("Manuel");
 
-        Trabajador trabajador1 = new Trabajador();
+        Trabajador trabajador1 = new Trabajador("Lucas", 30, "Teleco");
+
+        Persona persona = trabajador1;
+
 
         System.out.println(Persona.getCIUDAD());
 
         Persona.setCIUDAD("Segovia");
 
-        AppPersona.mostrarInformacionPersona(persona1);
-        AppPersona.mostrarInformacionPersona(persona2);
-        AppPersona.mostrarInformacionPersona(persona3);
+        AppPersona.mostrarInformacion(persona1);
+        AppPersona.mostrarInformacion(persona2);
+        AppPersona.mostrarInformacion(persona3);
 
-        AppPersona.mostrarInformacionTrabajador(trabajador1);
+        AppPersona.mostrarInformacion(trabajador1);
+
+
+        System.out.println(trabajador1.getNombre());
+        System.out.println(trabajador1.getProfesion());
 
     }
 
-    static void mostrarInformacionTrabajador(Trabajador trabajador)
-    {
-        System.out.println(trabajador.getInfo());
-        contadorPersonas++;
-    }
-
-    static void mostrarInformacionPersona(Persona persona)
+    static void mostrarInformacion(Persona persona)
     {
         System.out.println(persona.getInfo());
+        //ERROR: String profesion = persona.getProfesion();
         contadorPersonas++;
     }
+   
 }
