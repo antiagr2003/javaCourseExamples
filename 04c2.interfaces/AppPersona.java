@@ -24,7 +24,7 @@ public class AppPersona
 
         cotizables[0] = new Trabajador("Miguel", 43, "Informático");
         cotizables[1] = new Empresa("Telefonica", 2323232);
-        cotizables[2] = new Estudiante ("Luis", 22, "Teleco");
+        //ERROR: cotizables[2] = new Estudiante ("Luis", 22, "Teleco");
 
         for(int i=0;i<cotizables.length;i++)
             if(cotizables[i]!=null)
