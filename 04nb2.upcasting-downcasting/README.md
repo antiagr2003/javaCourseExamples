@@ -120,136 +120,20 @@ t.getProfesion();
 
 
 
-##### Upcasting y Doncasting con la clase Object
+Para evitar problemas futuros, siempre se recomienda verificar el tipo de objeto antes de hacer un Downcasting
 
 
 ```Java
-Object objetos[] = new Object[3];
+String s1 = "Hola";
+Trabajador t = (Trabajador) s1;
 ```
 
 
-```Java
-objetos[0] = persona;
-objetos[1] = "Hola";
-objetos[2] = trabajador;
-```
+    |   Trabajador t = (Trabajador) s1;
 
-
-
-
-    Jaime(33)Teleco en Telefónica
-
-
-
-
-```Java
-objetos[0].getNombre()
-```
-
-
-    |   objetos[0].getNombre()
-
-    cannot find symbol
-
-      symbol:   method getNombre()
+    incompatible types: java.lang.String cannot be converted to Trabajador
 
     
 
-
-No se puede realizar un downcasting si el objeto al que apunta la referencia no es del tipo especificado
-
-
-```Java
-Trabajador t = (Trabajador) objetos[0];
-```
-
-
-    ---------------------------------------------------------------------------
-
-    java.lang.ClassCastException: REPL.$JShell$18U$Persona cannot be cast to REPL.$JShell$19O$Trabajador
-
-    	at .(#27:1)
-
-
-Por ello, una buena práctica es preguntar por el tipo de objeto antes de hacer el downcasting
-
-
-```Java
-Trabajador t = null;
-if(objetos[2] instanceof Trabajador)
-    t = (Trabajador) objetos[2];
-```
-
-
-```Java
-t.getNombre()
-```
-
-
-
-
-    Jaime
-
-
-
-
-```Java
-t.getProfesion()
-```
-
-
-
-
-    Teleco en Telefónica
-
-
-
-
-```Java
-for(int i=0;i<3;i++)
-    System.out.println(objetos[i].toString());
-```
-
-    Luis(22)
-    Hola
-    Jaime(33)Teleco en Telefónica
-
-
-
-```Java
-p.toString()
-```
-
-
-
-
-    Jaime(33)Teleco en Telefónica
-
-
-
-
-```Java
-objetos[0].toString()
-```
-
-
-
-
-    Luis(22)
-
-
-
-Por defecto el método println() va a buscar el método toString() de los objetos que recibe
-
-
-```Java
-System.out.println(p);
-```
-
-    Jaime(33)Teleco en Telefónica
-
-
-
-```Java
-
-```
+if(s1 instanceof Trabajador)
+    t = (Trabajador) s1;
