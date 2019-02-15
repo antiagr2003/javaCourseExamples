@@ -16,7 +16,7 @@ public class Cuadrado extends Figura
 
 	void setLado(int lado)
 	{
-		if(x>1 && x<600)
+		if(lado>1 && lado<600)
 			this.lado = lado;
 		else
 			this.lado = 2;

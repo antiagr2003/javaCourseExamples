@@ -18,7 +18,7 @@ public class Circulo extends Figura
 
 	void setRadio(int radio)
 	{
-		if(x>1 && x<600)
+		if(radio>1 && radio<600)
 			this.radio = radio;
 		else
 			this.radio = 2;
