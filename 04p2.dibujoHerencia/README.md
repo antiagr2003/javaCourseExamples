@@ -1,7 +1,11 @@
 ## Práctica 04p2. POO avanzado. Dibujo de diferentes tipos de figura. 
 ### Desarrollo de una aplicación gráfica que dibuje varios tipos de figuras basándose en el concepto de herencia.
 
-Fusionar las prácticas 2 (pintar en un dibujo un cuadrado) y 3 (figuras en herencia) para que podamos representar cuadrados y circunferencias en un lienzo.
+Fusionar las prácticas 2 (pintar en un dibujo un cuadrado) y 3 (figuras en herencia) para que podamos representar cuadrados y circunferencias en un lienzo. Esta fusión deberá cambiar la forma de pintar los cuadrados de las primeras prácticas. En la práctica 2 la lógica propia de pintar el cuadrado, no la tenía el propio objeto, si no la tenía el Dibujo. Esto va en contra de la filosofía del patrón Experto: cada objeto debe ser el que posea toda su lógica.
+
+A continuación, se muestra un diagrama de secuencia que ayudará a saber el flujo de programa de nuestro código:
+
+![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/04p2.dibujoHerencia/_diagramaSecuencia.png)
 
 Como ya programamos en la práctica 3, cada figura podrá tener relleno o no y poseerán un color específico, además de tener una posición.
 
