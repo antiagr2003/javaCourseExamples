@@ -1,6 +1,9 @@
 # Solutions
 *.java1
 
+# Other resources
+*.pptx
+*.ppt
 
 # Compiled class file
 *.class
