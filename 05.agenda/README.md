@@ -16,12 +16,14 @@ Las opciones que se mostrarán al usuario para trabajar con la agenda, serán:
 5. Mostrar el contenido del array. El número máximo de ocurrencias a crear será 10.
 
 ![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/05.agenda/diagramaCasosUso.jpg)
+
 Diagrama de Casos de Uso
 
 #### Diseño
 
 ![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/05.agenda/diagramaPaquetes.jpg)
-Diagrama de paquetes
+
+Diagrama de Paquetes
 
 El diseño de la aplicación estará compuesto por 3 capas: 
 - La clase App de interfaz de usuario que se definirá en el paquete *practica05.ui*. Al poseer muchas líneas de código se modularizará en distintos métodos. La clase App deberá comunicarse con Agenda mediante objetos Persona ya encapsulados. Agenda, agrégame a esta persona, no agregame a un futuro objeto que tenga estos atributos.
