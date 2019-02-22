@@ -106,26 +106,7 @@ public class Persona
     @Override
     public String toString()
     {
-        //return nombre + "(" + edad + ")"; 
-        StringBuilder sb = new StringBuilder();
-        
-        //Opción 1: 
-        sb.append(nombre);
-        sb.append("(");
-        sb.append(edad);
-        sb.append(")");
-        
-        //Opción 2: 
-        //sb.append(nombre).append("(").append(edad).append(")");
-        
-        //Opción 3 (estético): 
-        /* 
-        sb.append(nombre)
-          .append("(")
-          .append(edad)
-          .append(")");
-        */
-        return sb.toString();
+        return nombre + "(" + edad + ")"; 
     }
 }
 
