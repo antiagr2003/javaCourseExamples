@@ -18,13 +18,29 @@ public class App
 
         personas.add(new Persona("33333A", "Jaime", 28));
 
-        //personas.remove(0);        
+        System.out.println(personas.contains(new Persona("11111A")));
+
         personas.remove(new Persona("11111A"));
-        personas.get(3);        
+        personas.get(3);   
+
+        Collection personasAsCollection = personas;     
+        
+        //personasAsCollection.get(0);
+        /* App.java:26: error: cannot find symbol
+        personasAsCollection.get(0);
+                            ^
+        symbol:   method get(int) */
 
         System.out.println(personas);
 
         for(int i=0;i<personas.size();i++)
-            System.out.println(personas.get(i));            
+            System.out.println("1.- " + personas.get(i));    
+
+
+        personasAsCollection.remove(0); //¿Por qué no da error? 
+        //Java hace Autoboxing de 0 a new Integer(0) e intentará borrar el objeto de la colección que devuelva true en equals con ese 0
+
+        personas.add("Hola");      
+        personas.add(new Integer(10));
     }    
 }
