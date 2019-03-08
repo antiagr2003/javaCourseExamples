@@ -24,7 +24,7 @@ dibujo.pintar("Grupo Rojo", new Circulo(100, 20, true, Color.RED, 200));
 
 ![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/07.dibujoGrupos/_diagramaSecuencia.jpg)
 
-##### Salida del programa
+#### Salida del programa
 * AppDibujoGrupo: Crear 5 figuras que pertenezcan a 3 grupos diferentes. Haremos que las figuras de un grupo sean del mismo color, para comprender más fácilmente su ejecución. Así, los nombres de los grupos serán "Grupo Rojo", "Grupo Azul", etc.
 
 En primer lugar se pintarán todas las figuras y con retardos de 1 segundo se ocutarán progresivamente cada uno de los grupos. 
