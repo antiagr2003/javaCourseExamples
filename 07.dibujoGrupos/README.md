@@ -3,9 +3,14 @@
 
 Modificar la práctica de Dibujo para que agrupe distintas figuras. El grupo permitirá trabajar con un conjunto de figuras para realizar acciones conjuntas del tipo: mostrar figuras y ocultar figuras del grupo.
 
+##### Diagrama de Casos de uso
+
 ![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/07.dibujoGrupos/_diagramaCasosUso.jpg)
 
+
 La gestión del grupo se realizará con una estructura que permita de un forma muy rápida acceder a un conjunto de figuras a partir de un nombre de grupo. Así se podrá gestionar fácil y eficientemente la acción de "ocultarGrupo".
+
+##### Diagrama de Clases
 
 ![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/07.dibujoGrupos/_diagramaClases.jpg)
 
@@ -14,6 +19,8 @@ Ahora, cuando se vaya a pintar una figura se deberá indicar a qué grupo perten
 ```
 dibujo.pintar("Grupo Rojo", new Circulo(100, 20, true, Color.RED, 200));
 ```
+
+##### Diagrama de Secuencia del caso de uso "Pintar una Figura en un grupo"
 
 ![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/07.dibujoGrupos/_diagramaSecuencia.jpg)
 
