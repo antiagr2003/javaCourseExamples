@@ -50,8 +50,14 @@ public class Persona implements Comparable
     }
 
     @Override
-    public int compareTo(Object o)
+    public int compareTo(Object obj)
     {
-        return 0;   
+        if(obj instanceof Persona) 
+        {
+            Persona p = (Persona) obj;
+            return nif.compareTo(p.getNif()); 
+        }
+        else
+            return +1;   
     }
 }
