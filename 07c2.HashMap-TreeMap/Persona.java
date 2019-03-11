@@ -38,9 +38,9 @@ public class Persona implements Comparable
         StringBuilder sb = new StringBuilder();
         sb.append("NIF: ")
           .append(nif)
-          .append("\nNombre: ")
+          .append(" - Nombre: ")
           .append(nombre)
-          .append("\nEdad: ")
+          .append(" - Edad: ")
           .append(edad);
         return sb.toString();
     }

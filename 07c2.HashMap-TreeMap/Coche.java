@@ -11,6 +11,11 @@ public class Coche
 		this.modelo  = modelo;
 	}
 	
+	public String getMarca()
+	{
+		return marca;
+	}
+
 	public String toString()
 	{
 		return marca + " (" + modelo + ")";
