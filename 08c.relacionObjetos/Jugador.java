@@ -52,6 +52,12 @@ public class Jugador
     @Override
     public String toString()
     {
-        return "\nNombre: " + nombre + " - Dorsal: " + dorsal + " Estadisticas: " + estadisticas;
+        StringBuilder sb = new StringBuilder();
+        sb.append(nombre)
+            .append(" - #")
+            .append(dorsal)
+            .append(" - Estadisticas: ")
+            .append(estadisticas);
+        return sb.toString();        
     }    
 }

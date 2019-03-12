@@ -19,5 +19,9 @@ public class AppEquipoFutbol
         equipo1.addJugador(j2);
         
         System.out.println(equipo1);
+
+
+
+        System.out.println("Profesion del presi: " + equipo1.getPresidente().getProfesion());
     }
 }

@@ -56,8 +56,16 @@ public class Equipo
     public String toString()
     {
         NumberFormat nf = NumberFormat.getCurrencyInstance();
-        return "Nombre: " + nombre + "\nPresupuesto: " + nf.format(presupuesto) + "\nJugadores: " + jugadores
-                + "\nPresidente: " + presidente;
+        StringBuilder sb = new StringBuilder();
+        sb.append(nombre)
+            .append("\nPresupuesto: ")
+            .append(nf.format(presupuesto))
+            .append("\nJugadores: ")
+            .append(jugadores)
+            .append("\nPresidente: ")
+            .append(presidente);
+
+        return sb.toString();
     }
     
 }

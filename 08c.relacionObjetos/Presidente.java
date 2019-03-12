@@ -12,10 +12,21 @@ public class Presidente
         this.profesion = profesion;
     }
 
+    public String getProfesion()
+    {
+        return profesion;
+    }
+
     @Override
     public String toString()
     {
-        return "Nombre: " + nombre + " - Profesion: " + profesion;
+        StringBuilder sb = new StringBuilder();
+        sb.append(nombre)
+            .append(" (")
+            .append(profesion)
+            .append(")");
+
+        return sb.toString();        
     }    
     
 }
