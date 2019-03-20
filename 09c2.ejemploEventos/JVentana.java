@@ -13,10 +13,10 @@ import java.awt.BorderLayout;
 public class JVentana extends JFrame implements ActionListener
 {
 
-        JLabel lblNombre = new JLabel("Nombre: ");
-        JTextField txtNombre = new JTextField(10);
-        JButton btnAceptar = new JButton("Aceptar");
-        JButton btnCancelar = new JButton("Cancelar");
+        private JLabel lblNombre;
+        private JTextField txtNombre = new JTextField(10);
+        private JButton btnAceptar = new JButton("Aceptar");
+        private JButton btnCancelar = new JButton("Cancelar");
 
 	public static void main( String[] args )
 	{
@@ -33,7 +33,7 @@ public class JVentana extends JFrame implements ActionListener
         private void initComponents()
         {
 
- 
+                lblNombre = new JLabel("Nombre: ");
 
                 //componenteRecebirElEvento.addActionListener(gestorEvento);
                 btnAceptar.addActionListener(this);
