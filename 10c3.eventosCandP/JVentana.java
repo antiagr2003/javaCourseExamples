@@ -17,23 +17,23 @@ public class JVentana extends JFrame
     {
         this.addKeyListener(new KeyAdapter()
         {
-            public void keyPressed(KeyEvent e) 
+            public void keyReleased(KeyEvent e) 
             {
                 Point p = null;
                 switch(e.getKeyCode())
                 {
                     case KeyEvent.VK_C:
-                        if(e.getModifiers()==KeyEvent.CTRL_MASK)
+                        if(e.getModifiersEx()==KeyEvent.CTRL_DOWN_MASK)
                             System.out.println("Ctrl+C");
                         break;
 
                     case KeyEvent.VK_V:
-                        if(e.getModifiers()==KeyEvent.CTRL_MASK)
+                        if(e.getModifiersEx()==KeyEvent.CTRL_DOWN_MASK)
                             System.out.println("Ctrl+V");
                         break;
 
                     case KeyEvent.VK_W:
-                        if(e.getModifiers()==KeyEvent.CTRL_MASK)
+                        if(e.getModifiersEx()==KeyEvent.CTRL_DOWN_MASK)
                         {
                             System.out.println("Ctrl+W: Saliendo...");
                             JVentana.this.dispose();
