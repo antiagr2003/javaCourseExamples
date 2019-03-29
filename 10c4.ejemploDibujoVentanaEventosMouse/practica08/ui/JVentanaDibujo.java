@@ -83,9 +83,15 @@ public class JVentanaDibujo extends JFrame
 				public void actionPerformed(ActionEvent e)
 				{
 					btnCuadrado.setEnabled(false);
+					btnCirculo.setEnabled(false);
+
+					lienzo.setCursor(new Cursor(Cursor.CROSSHAIR_CURSOR));
+
 					lienzo.addMouseListener(new MouseAdapter()
 					{
-						@Override
+						//Ejemplo con clicked: no tan suave
+
+						/*@Override
 						public void mouseClicked(MouseEvent me)
 						{
 							if(x==-1 && y==-1)
@@ -95,18 +101,44 @@ public class JVentanaDibujo extends JFrame
 							}
 							else
 							{
-								int lado = Math.abs(me.getX()-x);					
+								int lado = me.getX()-x;
 								Cuadrado c = new Cuadrado(x, y, true, Color.RED, lado);	
 								dibujo.pintar("Grupo Rojo", c);
 								lienzo.repaint();
 								lienzo.removeMouseListener(this);		
 								btnCuadrado.setEnabled(true);
 								x = -1;
-								y = -1;						
+								y = -1;		
+								lienzo.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));				
 							}
 
 							
+						}*/
+
+						//Ejemplo con presión y liberación del ratón
+						@Override
+						public void mousePressed(MouseEvent me)
+						{
+							if(x==-1 && y==-1)
+							{
+								x = me.getX();
+								y = me.getY();
+							}
 						}
+
+						@Override
+						public void mouseReleased(MouseEvent me)
+						{
+							int lado = me.getX()-x;
+							Cuadrado c = new Cuadrado(x, y, true, Color.RED, lado);	
+							dibujo.pintar("Grupo Rojo", c);
+							lienzo.repaint();
+							lienzo.removeMouseListener(this);		
+							btnCuadrado.setEnabled(true);
+							x = -1;
+							y = -1;		
+							lienzo.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));				
+						}						
 					});
 
 					/*int lado = Integer.parseInt(txtLadoRadio.getText());

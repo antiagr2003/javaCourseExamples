@@ -16,10 +16,10 @@ public class Cuadrado extends Figura
 
 	public void setLado(int lado)
 	{
-		if(x>1 && x<600)
+		if(lado>10)
 			this.lado = lado;
 		else
-			this.lado = 2;
+			this.lado = 10;
 	}
 
 	public int getLado()
