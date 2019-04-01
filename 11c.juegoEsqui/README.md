@@ -3,4 +3,4 @@
 
 Ejemplo para saber trabajar con eventos de tipo Mouse o Key en contextos de dibujo libre (Canvas),
 
-![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/22c.juegoEsqui/output.jpg)
+![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/11c.juegoEsqui/output.jpg)
