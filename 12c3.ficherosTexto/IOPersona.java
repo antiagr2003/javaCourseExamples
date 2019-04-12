@@ -3,6 +3,79 @@ import java.io.*;
 
 public class IOPersona
 {
+
+    public static void exportarPersonas2Texto(Collection personas)
+    {
+        try
+        {
+            FileWriter fw = new FileWriter("output.html");
+            PrintWriter pw = new PrintWriter(fw);
+
+            Iterator it = personas.iterator();
+            while(it.hasNext())
+            {
+                Persona p = (Persona) it.next();
+                pw.println(p.toHTML());
+            }
+           
+           pw.close();
+           fw.close();
+
+
+        }
+        catch(IOException ioe)
+        {
+            //ioe.printStackTrace();
+            javax.swing.JOptionPane.showMessageDialog(null, "No se pudo escribir en el fichero", "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+        }
+
+        //ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("datos/personas.obj"));
+    }
+
+    public static void importPersonasFromTexto(Collection personas)
+    {
+        try
+        {
+            FileReader fr = new FileReader("personaAImportar.txt");
+            BufferedReader br = new BufferedReader(fr);
+
+            String s = br.readLine();
+            while(s!=null)
+            {
+                System.out.println(s);
+                try
+                {
+                    String datos[] = s.split(":");
+                    String nombre = datos[0];                    
+                    int edad = Integer.parseInt(datos[1]);
+                    personas.add(new Persona(nombre, edad));
+                }
+                catch(EdadNoValidaException enve)
+                {
+                    System.out.println(enve);
+                }
+                catch(NumberFormatException nfe)
+                {
+                    System.out.println("No se importó esta persona porque la edad no es un número");
+                }                
+
+                s = br.readLine();
+            }
+
+            System.out.println(personas);
+            br.close();
+            fr.close();
+           
+        }
+        catch(IOException ioe)
+        {
+            //ioe.printStackTrace();
+            javax.swing.JOptionPane.showMessageDialog(null, "No se encontró el fichero", "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+        }
+        //ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("datos/personas.obj"));
+    }
+
+
     public static void escribirPersonas(Collection personas)
     {
         try
