@@ -10,9 +10,11 @@ El alumno podrá elegir entre desarrollar una aplicación Swing que gestione un 
 #### Entregable:
 
 Un fichero ZIP que contenga:
-- Un PDF de una página con los pantallazos más representativos de vuestra aplicación.
-- Un ZIP con los .JAVA (en la estructura de paquetes que se tenga) y un JAR que será el que yo ejecute.
-- Un fichero de texto llamado README.txt con los usuarios, contraseñas o palabras clave a utilizar en el programa. 
+- Proyecto.pdf: Un PDF de una página con los pantallazos más representativos de vuestra aplicación.
+- Sources.zip: Un ZIP con los .JAVA (en la estructura de paquetes que se tenga).
+- Bin.zip: Un JAR del fichero de ejecución del proyecto con los ficheros y directorios complementarios necesarios.
+- Javadoc.zip: Un ZIP con la documentación de JAVADOC. Documentar 10 elementos (clase, atributos o métodos).
+- README.txt: Un fichero de texto llamado README.txt con los usuarios, contraseñas o palabras clave a utilizar en el programa. 
 
 Gracias!
 
