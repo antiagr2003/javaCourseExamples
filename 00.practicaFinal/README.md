@@ -4,7 +4,7 @@ El alumno podrá elegir entre desarrollar una aplicación Swing que gestione un 
 
 #### Fecha de entrega:
 
-<span style="color:red;font-weight:bold">día del examen</span>
+<span style="color:red;font-weight:bold">20 ó 22 de mayo, según la fecha del último examen que tengáis</span>
 
 
 #### Entregable:
