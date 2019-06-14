@@ -24,6 +24,8 @@ public class JVentana extends JFrame
 					gestor.addSensorVentana(sensor, JVentana.this);
 				}
 			});
+
+		gestor.init();
 	}
 
 }
