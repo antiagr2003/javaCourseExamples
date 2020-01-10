@@ -1,1 +1,0 @@
-java ejemploImagenes.ui.JVentana
