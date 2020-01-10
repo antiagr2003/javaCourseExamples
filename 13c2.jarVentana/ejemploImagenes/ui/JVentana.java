@@ -27,29 +27,29 @@ public class JVentana extends JFrame
         this.setLayout(new BorderLayout());
 
         this.add(lblNombre, BorderLayout.WEST);
-		this.add(txtNombre, BorderLayout.EAST);
+	this.add(txtNombre, BorderLayout.EAST);
 
         java.net.URL url = this.getClass().getResource("/images/java.png");             
-        JLabel labelRotulo = new JLabel("Gestión de Alumnos", new ImageIcon(url), JLabel.CENTER);
+        JLabel labelRotulo = new JLabel("GestiÃ³n de Alumnos", new ImageIcon(url), JLabel.CENTER);
         this.add(labelRotulo, BorderLayout.NORTH);
         this.add(btnAceptar, BorderLayout.SOUTH);
 
         url = this.getClass().getResource("/images/icono.png");
         this.setIconImage(new ImageIcon(url).getImage());
 
-        //Tamaño
+        //TamaÃ±o
         //this.setSize(300, 200);
         this.pack();
 
-        //Cambio de título
-        this.setTitle("Otro título");
-        //No se cambie de tamaño
+        //Cambio de tÃ­tulo
+        this.setTitle("Otro tÃ­tulo");
+        //No se cambie de tamaÃ±o
         this.setResizable(true);
         //Cierre por defecto
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //ventana.setLocation(300, 400);
         this.setLocationRelativeTo(null);
-        //Última acción
+        //Ãšltima acciÃ³n
         this.setVisible(true);
 	}
 }
