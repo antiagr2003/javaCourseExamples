@@ -39,4 +39,32 @@ Configuración recomendable para persistir los cambios en el sistema, para que l
 
 ## Configuración de acentos
 
+La siguiente explicación no forma parte de la asignatura y es de un nivel medio-avanzado, por lo que si la lectura resulta compleja, mejor dejarla.
+
+
+Windows emplea generalmente la tabla de codificación de caracteres widows-1252. Al ejecutar la JVM, Java detecta esa configuración y muestra la salida por la consola empleando dicha tabla.
+El problema surge por la codificación específica que sigue la consola, que generalmente emplea la página de códigos CP850. Por ese motivo, no coinciden los caracteres empleados en código con los que representa Windows.
+
+### Solución
+
+1. Conocer la página de códigos (tabla de codificación) de la consola
+
+```bash
+    Z:\> mode con
+
+    Estado para dispositivo CON:
+    ----------------------------
+    Líneas:              300
+    Columnas:            80
+    Ritmo del teclado:   31
+    Retardo del teclado: 1
+    Página de códigos:    850
+```
+
+2. Indicar a Java que debe utilizar esa tabla, en lugar de la tabla por defecto del sistema.
+
+```bash
+    Z:\> java -Dfile.encoding=cp850 HolaMundo
+```    
+
 ![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.holaMundo/acentos.png)
