@@ -27,14 +27,14 @@ where possible options include:
 
 
 
-![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00c.jdk/configuracionPathEnConsola.png)
+![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.holaMundo/configuracionPathEnConsola.png)
 
 ### Configuración en Windows
 
 Configuración recomendable para persistir los cambios en el sistema, para que los cambios queden registrados para siempre.
 
 
-![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00c.jdk/configuracionPathEnWindows.png)
+![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.holaMundo/configuracionPathEnWindows.png)
 
 
 ## Configuración de acentos
@@ -67,4 +67,4 @@ El problema surge por la codificación específica que sigue la consola, que gen
     Z:\> java -Dfile.encoding=cp850 HolaMundo
 ```    
 
-![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00c.jdk/acentos.png)
+![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.holaMundo/acentos.png)
