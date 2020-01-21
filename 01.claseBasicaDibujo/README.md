@@ -13,6 +13,8 @@ Decidir el mejor constructor para este objeto.
 
 Para pintar el cuadrado en un entorno gráfico (Dibujo) se utilizarán las clases suministradas por el profesor. Se podrá analizar el código (¿Cómo lo hace?) o la documentación facilitada de la carpeta docs (¿Qué hace?). ¿Qué os resulta más sencillo?
 
+![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/01.claseBasicaDibujo/diagramaSecuencia.jpg)
+
 ##### Forma de realizar la práctica
 1. Debéis descargaros las clases que se suministran (si no se está trabajando con Git Desktop se puede entrar en cada clase y acceder a la versión RAW, botón arriba a la derecha del código).
 2. Copiarlas al mismo directorio en el que vayamos a realizar la práctica.
