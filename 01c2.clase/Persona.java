@@ -10,10 +10,28 @@ public class Persona
 
 	//Constructores
 
-	Persona(String x, int y)
+	Persona()
 	{
-		nombre = x;
-		edad = y;
+
+	}
+
+
+	Persona(String nombre)
+	{
+		this.setNombre(nombre);
+	}
+
+	Persona(int edad, String nombre)
+	{
+		this(nombre, edad);
+	}
+
+	Persona(String nombre, int edad)
+	{
+		//this.nombre = nombre;
+		//this.edad = edad;
+		this.setNombre(nombre);
+		this.setEdad(edad);
 	}
 
 	//métodos
@@ -48,9 +66,34 @@ public class Persona
 		return (edad >= 18);
 	}
 
+	//No forman parte del interfaz
+	String formatHTML(float f)
+	{
+		return this.formatHTML(""+f);
+	}
+
+	String formatHTML(int i)
+	{
+		return this.formatHTML(""+i);
+	}
+
+	String formatHTML(String s)
+	{
+		return "<b><u>" + s + "</u></b>";
+	}
+	//Fin
+
+	String getInfoHTML()
+	{
+		return "<br/>===========<br/>Nombre: " + 
+				this.formatHTML	(nombre) + 
+				"<br/>Edad: " + this.formatHTML(edad);
+	}
+
 	String getInfo()
 	{
-		return "===========\nNombre: " + this.getNombre() + "\nEdad: " + edad;
+		return "===========\nNombre: " + 
+				nombre + "\nEdad: " + edad;
 	}
 
 }

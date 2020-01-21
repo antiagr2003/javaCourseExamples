@@ -1,9 +1,9 @@
-public class AppPersona
+public class AppPersona1
 {
 	public static void main(String args[])
 	{
 		int i = 4;
-
+		//Este codigo genere un error porque tenemos un contrsuctor personalizado creado
 		Persona persona1 = new Persona();
 		Persona persona2 = new Persona();
 
@@ -19,7 +19,5 @@ public class AppPersona
 		System.out.println(persona2.getNombre());
 		System.out.println(persona2.getEdad());
 
-		System.out.println(persona1.getInfo());
-		System.out.println(persona2.getInfo());
 	}
 }
