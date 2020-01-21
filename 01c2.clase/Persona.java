@@ -45,15 +45,15 @@ public class Persona
 		return edad;
 	}
 
-	void setNombre(String unNombre)
+	void setNombre(String nombre)
 	{
-		nombre = unNombre.toUpperCase();
+		this.nombre = nombre.toUpperCase();
 	}
 
-	void setEdad(int unaEdad)
+	void setEdad(int edad) //en un futuro este método deberá lanzar un error en la validación
 	{
-		if(unaEdad >=0 && unaEdad < 130)
-			edad = unaEdad;
+		if(edad >=0 && edad < 130)
+			this.edad = edad;
 	}
 
 	boolean isMayorEdad()
@@ -66,22 +66,25 @@ public class Persona
 		return (edad >= 18);
 	}
 
-	//No forman parte del interfaz
+	//Este método no forma parte del interfaz. Se invoca de una forma interna.
 	String formatHTML(float f)
 	{
 		return this.formatHTML(""+f);
+		//En un futuro: return this.formatHTML(String.valueOf(f));
 	}
 
+	//Este método no forma parte del interfaz. Se invoca de una forma interna.
 	String formatHTML(int i)
 	{
 		return this.formatHTML(""+i);
+		//En un futuro: return this.formatHTML(String.valueOf(i));
 	}
 
+	//Este método no forma parte del interfaz. Se invoca de una forma interna.
 	String formatHTML(String s)
 	{
 		return "<b><u>" + s + "</u></b>";
 	}
-	//Fin
 
 	String getInfoHTML()
 	{
@@ -95,5 +98,4 @@ public class Persona
 		return "===========\nNombre: " + 
 				nombre + "\nEdad: " + edad;
 	}
-
 }

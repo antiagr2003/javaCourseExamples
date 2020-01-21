@@ -3,7 +3,7 @@ public class AppPersona1
 	public static void main(String args[])
 	{
 		int i = 4;
-		//Este codigo genere un error porque tenemos un contrsuctor personalizado creado
+		
 		Persona persona1 = new Persona();
 		Persona persona2 = new Persona();
 
