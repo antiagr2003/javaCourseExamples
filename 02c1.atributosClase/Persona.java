@@ -109,14 +109,14 @@ public class Persona
 
 	String getInfoHTML()
 	{
-		return "<br/>===========<br/>Nombre: " + 
-				this.formatHTML	(nombre) + 
-				"<br/>Edad: " + this.formatHTML(edad);
+		return "<br/>===========" +
+			   "<br/>Nombre: " + this.formatHTML(nombre) + 
+			   "<br/>Edad: " + this.formatHTML(edad);
 	}
 
 	String getInfo()
 	{
-		return "===========\n" + 
+		return "\n===========" + 
 		"\nNombre: " + nombre +
 		"\nEdad: " + edad + 
 		"\nCIUDAD: " + CIUDAD;
