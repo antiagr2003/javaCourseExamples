@@ -6,7 +6,7 @@ public class Alumno extends Persona
 	String titulo;
 	String curso;
 
-	Alumno(String nombre, Strimg tiutlo, String curso)
+	Alumno(String nombre, String titulo, String curso)
 	{
 		super(nombre);
 		this.curso = curso;
