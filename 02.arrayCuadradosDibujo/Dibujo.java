@@ -25,7 +25,7 @@ public class Dibujo extends JFrame
 	*/
 	public void pintar(Cuadrado cuadrado)
 	{
-		lienzo.pintar(cuadrado);
+		lienzo.addCuadrado(cuadrado);
 		lienzo.repaint();
 	}
 
