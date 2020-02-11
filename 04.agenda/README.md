@@ -1,4 +1,4 @@
-## Práctica 05. Java Básico. Paquetes, modificadores, equals, toString, modularidad y diseño 
+## Práctica 04. Java Básico. Interfaz del objeto: equals() y toString()
 ### Crear una agenda que gestione personas.
 
 #### Funcionalidad
