@@ -16,3 +16,7 @@ Las opciones que se mostrarán al usuario para trabajar con la agenda, serán:
 ![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/04.agenda/diagramaCasosUso.jpg)
 
 Diagrama de Casos de Uso
+
+![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/05.agendaPaquetes/diagramaSecuencia.jpg)
+
+Diagrama de Secuencia
