@@ -1,0 +1,15 @@
+title Buscar una persona
+
+App->Agenda: new
+Agenda->App: agenda
+App->Persona: new
+Persona->App: personaABuscar
+App->Agenda: buscar(personaABuscar)
+Agenda->App: personaEncontrada
+alt personaEncontrada == null
+    App->App: mostrar("Error")
+else else
+    App->App: mostrar(personaEncontrada)
+end
+
+#https://www.websequencediagrams.com/
