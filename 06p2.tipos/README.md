@@ -7,5 +7,5 @@ Crear una aplicación que realice la siguiente cadena de conversiones
 
 #### Funcionalidad
 
- 54.6 --> float --> char --> Character --> String --> Integer --> int --> float
+ 54.6 --> float --> char --> int --> float
 
