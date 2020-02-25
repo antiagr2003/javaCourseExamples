@@ -1,0 +1,161 @@
+es>jshell
+|  Welcome to JShell -- Version 11.0.1
+|  For an introduction type: /help intro
+
+jshell> int a = 64
+a ==> 64
+
+jshell> byte b = a
+|  Error:
+|  incompatible types: possible lossy conversion from int to byte
+|  byte b = a;
+|           ^
+
+jshell> byte b = (byte) a
+b ==> 64
+
+jshell> int a = 64212
+a ==> 64212
+
+jshell> byte b = (byte) a
+b ==> -44
+
+jshell> b
+b ==> -44
+
+jshell> short s = b
+s ==> -44
+
+jshell> long l = b
+l ==> -44
+
+jshell> double d  = 34.6
+d ==> 34.6
+
+jshell> f = d
+|  Error:
+|  cannot find symbol
+|    symbol:   variable f
+|  f = d
+|  ^
+
+jshell> float f = 43.5
+|  Error:
+|  incompatible types: possible lossy conversion from double to float
+|  float f = 43.5;
+|            ^--^
+
+jshell> float f = (float) 43.5
+f ==> 43.5
+
+jshell> float f = 43.5F
+f ==> 43.5
+
+jshell> float f = 43.5f
+f ==> 43.5
+
+jshell> float f = 33.4F
+f ==> 33.4
+
+jshell> long l = f
+|  Error:
+|  incompatible types: possible lossy conversion from float to long
+|  long l = f;
+|           ^
+
+jshell> long l = (long) f
+l ==> 33
+
+jshell> char c = 'a'
+c ==> 'a'
+
+jshell> char c = 'aa'
+|  Error:
+|  unclosed character literal
+|  char c = 'aa'
+|           ^
+
+jshell> char c = 'a'
+c ==> 'a'
+
+jshell> Ssy
+jshell> System.out.print
+print(     printf(    println(
+
+jshell> System.out.print(c)
+a
+jshell> System.out.print((int)c)
+97
+jshell> char c = 'A'
+c ==> 'A'
+
+jshell> System.out.print((int)c)
+65
+jshell> System.out.print((int)c+1)
+66
+jshell> for(int i=65;i<99;i++) System.out.print("Char: " + ((char)i) + " Valor int: " + i);
+Char: A Valor int: 65Char: B Valor int: 66Char: C Valor int: 67Char: D Valor int: 68Char: E Valor int: 69Char: F Valor int: 70Char: G Valor int: 71Char: H Valor int: 72Char: I Valor int: 73Char: J Valor int: 74Char: K Valor int: 75Char: L Valor int: 76Char: M Valor int: 77Char: N Valor int: 78Char: O Valor int: 79Char: P Valor int: 80Char: Q Valor int: 81Char: R Valor int: 82Char: S Valor int: 83Char: T Valor int: 84Char: U Valor int: 85Char: V Valor int: 86Char: W Valor int: 87Char: X Valor int: 88Char: Y Valor int: 89Char: Z Valor int: 90Char: [ Valor int: 91Char: \ Valor int: 92Char: ] Valor int: 93Char: ^ Valor int: 94Char: _ Valor int: 95Char: ` Valor int: 96Char: a Valor int: 97Char: b Valor int: 98
+jshell> for(int i=65;i<99;i++) System.out.println("Char: " + ((char)i) + " Valor int: " + i);
+
+Char: A Valor int: 65
+Char: B Valor int: 66
+Char: C Valor int: 67
+Char: D Valor int: 68
+Char: E Valor int: 69
+Char: F Valor int: 70
+Char: G Valor int: 71
+Char: H Valor int: 72
+Char: I Valor int: 73
+Char: J Valor int: 74
+Char: K Valor int: 75
+Char: L Valor int: 76
+Char: M Valor int: 77
+Char: N Valor int: 78
+Char: O Valor int: 79
+Char: P Valor int: 80
+Char: Q Valor int: 81
+Char: R Valor int: 82
+Char: S Valor int: 83
+Char: T Valor int: 84
+Char: U Valor int: 85
+Char: V Valor int: 86
+Char: W Valor int: 87
+Char: X Valor int: 88
+Char: Y Valor int: 89
+Char: Z Valor int: 90
+Char: [ Valor int: 91
+Char: \ Valor int: 92
+Char: ] Valor int: 93
+Char: ^ Valor int: 94
+Char: _ Valor int: 95
+Char: ` Valor int: 96
+Char: a Valor int: 97
+Char: b Valor int: 98
+
+jshell> char c = 98
+c ==> 'b'
+
+jshell> char c = 160
+c ==> ' '
+
+jshell> char c = 161
+c ==> '¡'
+
+jshell> int a = 34
+a ==> 34
+
+jshell> char c = a
+|  Error:
+|  incompatible types: possible lossy conversion from int to char
+|  char c = a;
+|           ^
+
+jshell> boolean b = true
+b ==> true
+
+jshell> if(b)
+   ...>
+
+jshell>
+
+jshell> if(true)
