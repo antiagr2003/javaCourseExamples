@@ -1,0 +1,65 @@
+jshell> String s = "aaaa"
+s ==> "aaaa"
+
+jshell> s =  s + "b"
+s ==> "aaaab"
+
+jshell> s = "Hola"
+s ==> "Hola"
+
+jshell> s.charAt(0)
+$31 ==> 'H'
+
+jshell> s.charAt(1)
+$32 ==> 'o'
+
+jshell> s.charAt(2)
+$33 ==> 'l'
+
+
+jshell> s.charAt(11112)
+|  Exception java.lang.StringIndexOutOfBoundsException: String index out of range: 11112
+|        at StringLatin1.charAt (StringLatin1.java:47)
+|        at String.charAt (String.java:693)
+|        at (#34:1)
+
+jshell> s + "qqqq"
+$35 ==> "Holaqqqq"
+
+jshell> s.concat("qqqq")
+$36 ==> "Holaqqqq"
+
+jshell> s
+s ==> "Hola"
+
+jshell> s.endsWith("la")
+$38 ==> true
+
+jshell> s.endsWith("a")
+$39 ==> true
+
+jshell> s.endsWith("hola")
+$40 ==> false
+
+jshell> "hola"=="Hola"
+$41 ==> false
+
+jshell> "hola".equals"Hola"
+equals(             equalsIgnoreCase(
+
+jshell> "hola".equals("Hola")
+$42 ==> false
+
+jshell> "hola".equalsIgnoreCase("Hola")
+$43 ==> true
+
+jshell> "hola".equals("Hola")
+$44 ==> false
+
+jshell> "hola".toUpperCase()
+$45 ==> "HOLA"
+
+jshell> "hola".toUpperCase().equals("HOLA")
+$46 ==> true
+
+jshell>
