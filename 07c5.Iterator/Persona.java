@@ -1,4 +1,4 @@
-public class Persona
+public class Persona implements Comparable
 { 
     private String nif;
     private String nombre;
@@ -24,7 +24,8 @@ public class Persona
     public int getEdad()
     {
         return edad;
-    }    
+    }
+
     
     @Override
     public String toString()
@@ -32,17 +33,11 @@ public class Persona
         StringBuilder sb = new StringBuilder();
         sb.append("NIF: ")
           .append(nif)
-          .append(" Nombre: ")
+          .append("\nNombre: ")
           .append(nombre)
-          .append(" Edad: ")
+          .append("\nEdad: ")
           .append(edad);
         return sb.toString();
-    }
-
-    @Override
-    public int hashCode()
-    {
-        return nif.hashCode();
     }
     
     @Override
@@ -58,5 +53,17 @@ public class Persona
         }
         else
             return false;
+    }
+
+    @Override
+    public int compareTo(Object obj)
+    {
+        if(obj instanceof Persona) 
+        {
+            Persona p = (Persona) obj;
+            return nif.compareTo(p.getNif()); 
+        }
+        else
+            return +1;   
     }
 }
