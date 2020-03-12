@@ -7,9 +7,8 @@ import java.util.Map;
 
 /*
 Q1: ¿Qué pasa cuándo tenemos dos claves iguales?
-Q2: ¿Podemos tener una clave igual a null?
-Q3: ¿Podemos tener un valor igual a null?
-
+Q2: ¿Tendría sentido tener una clave igual a null?
+Q3: ¿Y un un valor igual a null?
 Q4: Reto:
     ¿Cómo calcularías el número de personas que tienen un coche en concreto? 
         Golf: 2
