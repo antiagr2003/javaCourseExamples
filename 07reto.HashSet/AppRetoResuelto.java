@@ -3,23 +3,24 @@ import java.util.HashSet;
 /*
 
 Q1: ¿Por qué el orden de salida no coincide con el de inserción?
+A1: Porque viene determinado por el valor devuelto por hashCode(). Como no se encuentra, toma la implementación de Object genérica.
+
 Q2: ¿Por qué no se encuentra a Ana?
+A1: Porque no estaba implementado el método hashCode()
 
 */
-
-public class AppReto
+public class AppRetoResuelto
 {
     public static void main(String[] args)
     {
         HashSet personas = new HashSet();
 
-        personas.add(new Persona("22222A", "Cristina", 33));  
+        personas.add(new Persona("22222A", "Cristina", 33)); 
         personas.add(new Persona("33333A", "Jaime", 22));
         personas.add(new Persona("11111A", "Ana", 27));        
+    
 
         System.out.println(personas);
-
-        System.out.println(personas.contains(new Persona("11111A", "Ana", 27)));
     }    
 }
 
@@ -73,4 +74,14 @@ class Persona
         else
             return false;
     }
+
+
+    @Override
+    public int hashCode()
+    {
+        return edad/10; //Aproximación de esta "ordenación artificial" para la JDK 11. 
+        //Recordamos que esta implementación para la ordenación es algo meramente pedagógico y no 100% funcional. 
+        //Siempre utilizaremos TreeSet.
+    }
+
 }
