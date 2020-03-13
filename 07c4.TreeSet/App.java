@@ -20,13 +20,6 @@ public class App
 
         personas.add(new Persona("33333A", "Javier", 38));
 
-        //personas.remove(0);        
-        personas.remove(new Persona("11111A"));
-       // personas.get(3);        
-
         System.out.println(personas);
-/*
-        for(int i=0;i<personas.size();i++)
-            System.out.println(personas.get(i));            */
     }    
 }
