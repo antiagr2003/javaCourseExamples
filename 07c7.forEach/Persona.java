@@ -35,6 +35,12 @@ public class Persona
     }
     
     @Override
+    public int hashCode()
+    {
+        return (int) (nif.toUpperCase().charAt(0));
+    }
+
+    @Override
     public boolean equals(Object obj) //Upcasting, el objeto que recibe lo vemos como un Objeto
     {
         if(obj instanceof Persona) //Si la instancia del objeto es una Persona...
