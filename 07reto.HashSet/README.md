@@ -7,7 +7,7 @@ Aunque no sea el objetivo, ni mucho menos, se propone ordenar (con fines pedagó
 
 ### Solución con un TreeSet
 
-si queremos optar por la estructura ideal, un TreeSet, Una solución podría ser la siguiente:
+Si quisiésemos optar por la estructura ideal, un TreeSet, una posible solución podría ser la siguiente:
 
 ```java
 class Persona
