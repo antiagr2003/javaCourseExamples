@@ -51,7 +51,9 @@ public class JVentana extends JFrame
         pnlCentro.add(btnCancelar);
 
         pnlSur.add(new JLabel("v1.0"));
-        pnlSur.add(new JLabel("by DCB"));
+        JLabel lblBy = new JLabel("by DCB");
+        lblBy.setHorizontalAlignment(JLabel.RIGHT); //Alineación a la derecha
+        pnlSur.add(lblBy);
 
 
         this.setLayout(new BorderLayout());
