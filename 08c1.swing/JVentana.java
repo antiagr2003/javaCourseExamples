@@ -1,4 +1,4 @@
-/*Enlazado con slack*/
+/*Enlazado con slack v2 */
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import javax.swing.JLabel;
