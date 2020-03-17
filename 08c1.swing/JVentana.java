@@ -65,7 +65,7 @@ public class JVentana extends JFrame
         this.setResizable(false);
         //this.setLocation(333,333);
         this.setLocationRelativeTo(null);
-
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Para que al pulsar en la X finalice la aplicación
         //Este método siempre debe ser el último mensaje
         this.setVisible(true);
 	}
