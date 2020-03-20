@@ -5,7 +5,7 @@ Modificar la práctica de Dibujo anterior para crear una aplicación gráfica qu
 
 ![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/08.dibujoGruposVentana/_diagramaCasosUso.jpg)
 
-Como no se podrán representar todavía figuras de forma interactiva a través de este interfaz gráfico, se tomará la forma de creación de figuras de la práctica anterior (mediante mensajes escritos en tiempo de compilación), pero dentro de la nueva clase JVentanaDibujo, que sustituye a la antigua clase Dibujo. La clase App desaparecerá, ya que el main y el control del programa estará en el JFrame (nueva clase JVentanaDibujo). Ver el diagrama de clases para saber la nueva estructura y relación de clases que tendremos. La nueva clase Dibujo poseerá toda la lógica de gestión de nuestras figuras (como hacía la clase Agenda).
+Como no se podrán representar todavía figuras de forma interactiva a través de este interfaz gráfico, se tomará la forma de creación de figuras de la práctica anterior (mediante mensajes escritos en tiempo de compilación), pero dentro de la nueva clase JVentanaDibujo, que sustituirá a la antigua clase Dibujo. La clase App desaparecerá, ya que el main y el control del programa estará en el JFrame (nueva clase JVentanaDibujo). Ver el diagrama de clases para saber la nueva estructura y relación de clases que tendremos. La nueva clase Dibujo poseerá toda la lógica de gestión de nuestras figuras (como hacía la clase Agenda) que antes se guardaba en Lienzo.
 
 ![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/08.dibujoGruposVentana/_diagramaClases.jpg)
 
