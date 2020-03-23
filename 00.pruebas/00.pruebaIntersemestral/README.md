@@ -20,7 +20,7 @@ void AddPersona()
 
 ### ¿Tiene sentido una clase con un solo atributo o sin ellos?
 
-Un objeto puede tener sentido por su información o por su comportamiento. Puede no tener atributos y poseer un comportamiento que justifique su existencia (sobre todo en la redefinición de funcionalidad en herencia)
+Por lo general resulta raro encontrarse una clase con un solo atributo (una ocurrencia de Persona con nombre vs una ocurrencia de String) o sin atributos. Un objeto puede tener sentido, no solo por su información, si no también por su comportamiento. Puede no tener atributos y poseer un comportamiento que justifique su existencia (sobre todo en la redefinición de funcionalidad en herencia).
 
 ```java
 class Clase
@@ -33,6 +33,17 @@ class Clase
 class Clase
 {
 	
+}
+```
+
+```java
+class Clase extends OtraClase
+{
+	@Override
+	public int m()
+	{
+
+	}
 }
 ```
 
