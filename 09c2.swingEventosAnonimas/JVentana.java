@@ -14,11 +14,10 @@ import java.awt.GridLayout;
 import java.awt.BorderLayout;
 
 import java.awt.Font;
-import java.awt.Color;
 
 /*
-Q1: ¿En qué casos definiré los componentes gráficos como atributos?
-Q2: ¿Cuántos bytecodes aparecen en la compilación?
+Q1: Â¿En quÃ© casos definirÃ© los componentes grÃ¡ficos como atributos?
+Q2: Â¿CuÃ¡ntos bytecodes aparecen en la compilaciÃ³n?
 
 */
 
@@ -41,7 +40,9 @@ public class JVentana extends JFrame
         JPanel pnlCentro = new JPanel(new GridLayout(3, 2));
         JPanel pnlSur = new JPanel(new GridLayout(1, 2));
 
-        JLabel lblTitulo = new JLabel("Gestión de Personas");
+        
+
+        JLabel lblTitulo = new JLabel("GestiÃ³n de Personas");
         lblTitulo.setFont(new Font("Arial", Font.BOLD, 16));
         lblTitulo.setForeground(new Color(112, 146, 190));
         pnlNorte.add(lblTitulo);
@@ -64,7 +65,7 @@ public class JVentana extends JFrame
 
         pnlSur.add(new JLabel("v1.0"));
         JLabel lblBy = new JLabel("by DCB");
-        lblBy.setHorizontalAlignment(JLabel.RIGHT); //Alineación a la derecha
+        lblBy.setHorizontalAlignment(JLabel.RIGHT); //AlineaciÃ³n a la derecha
         pnlSur.add(lblBy);
 
         btnAceptar.addActionListener(new ActionListener()
@@ -72,7 +73,7 @@ public class JVentana extends JFrame
                 @Override
                 public void actionPerformed(ActionEvent e)
                 {
-                    System.out.println("Botón pulsado Aceptar");
+                    System.out.println("BotÃ³n pulsado Aceptar");
                 }
             });
 
@@ -81,19 +82,19 @@ public class JVentana extends JFrame
                 @Override
                 public void actionPerformed(ActionEvent e)
                 {
-                    System.out.println("Botón pulsado Cancelar");
+                    System.out.println("BotÃ³n pulsado Cancelar");
                 }
             });
 
         //this.addWindowListener(this);
-        //this as JFrame.recibe eventos de Ventana que gestionará(this as WindowListener);
+        //this as JFrame.recibe eventos de Ventana que gestionarÃ³(this as WindowListener);
 
         this.addWindowListener(new WindowAdapter()
             {
                 @Override
                 public void windowClosing(WindowEvent e)   
                 {
-                    System.out.println("Desea realmente cerrar la aplicación");
+                    System.out.println("Desea realmente cerrar la aplicaciÃ³n");
                     JVentana.this.dispose();
                     System.exit(0);
                 }
@@ -107,8 +108,8 @@ public class JVentana extends JFrame
         this.pack();
         this.setResizable(false);
         this.setLocationRelativeTo(null);
-        this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE); //Para que al pulsar en la X finalice la aplicación
-        //Este método siempre debe ser el último mensaje
+        this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE); //Para que al pulsar en la X finalice la aplicaciÃ³n
+        //Este mÃ³todo siempre debe ser el Ã³ltimo mensaje
         this.setVisible(true);
 	}
 
