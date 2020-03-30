@@ -28,22 +28,31 @@ public class Lienzo extends Canvas
 			figurasGrupo.add(figura);	
 	}
 
+	/*
+	interface Stream
+	void forEach(Consumer<? super T> action) --> acción
+	*/
 	public void setVisibleGrupo(String grupo, boolean visible)
 	{
 		Collection<Figura> figurasGrupo = figuras.get(grupo);
 		if(figurasGrupo!=null)
 			figurasGrupo.stream()
-					    .forEach(figura -> figura.setVisible(visible));
+				.forEach(figura -> figura.setVisible(visible));
 	}	
 
 	public void setVisibleTodasFiguras(boolean visible)
 	{
 		figuras.values()
-			   .stream()
-			   .flatMap(Collection::stream)
-   			   .forEach(figura -> figura.setVisible(visible));
+			.stream()
+			.flatMap(Collection::stream)
+			.forEach(figura -> figura.setVisible(visible));
 	}
 
+	/*
+
+	filter(Predicate<? super T> predicate) --> condición
+	flatMap(Function<? super T,? extends Stream<? extends R>> mapper)
+	*/
 	@Override
 	public void paint(Graphics g)
 	{
