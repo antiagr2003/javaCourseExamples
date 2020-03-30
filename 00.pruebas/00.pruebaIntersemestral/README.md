@@ -17,6 +17,10 @@ void AddPersona()
 	....
 }
 ```
+### He creado solo una clase Paciente con un atributo edad que es el que establece el comportamiento en cada caso
+
+El objetivo de esta asignatura es interiorizar los conceptos de Orientación a Objetos. Se trata de responsabilizar a cada clase de su funcionalidad y que el problema escale de la mejor forma posible. Además, ya dijimos varias veces en clase que la presencia de ifs para definir comportamientos no es la mejor solución. Por otro lado, el definir una clase con todos los posibles atributos que puedan tener los distintos tipos de objetos crea una gran masa de código.
+
 
 ### ¿Tiene sentido una clase con un solo atributo o sin ellos?
 
