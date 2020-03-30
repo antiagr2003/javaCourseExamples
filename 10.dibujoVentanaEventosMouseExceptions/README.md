@@ -7,6 +7,8 @@ Tomar como base la práctica 9 de la aplicación de dibujo con eventos de tipo r
 
 En el caso de introducir un valor no válido para cada color primario (0-255) se lanzará una excepción propia que se creará el alumno, mostrando un mensaje mediante una ventana de diálogo (JOptionPane). Si se introduce un texto que no representa un número, también se deberá comunicar el error al usuario.
 
+Para aumentar la usabilidad de la aplicación, se generarán tres números aleatorios para asignar automáticamente los colores al iniciar el programa y cada vez que se pinte un objeto.
+
 Error en el caso de color no numérico:
 
 ![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/10.dibujoVentanaEventosMouseExceptions/output.jpg)
