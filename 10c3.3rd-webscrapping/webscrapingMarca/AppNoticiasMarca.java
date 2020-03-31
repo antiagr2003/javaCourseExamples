@@ -17,7 +17,7 @@ import org.jsoup.select.Elements;
 import java.util.List;
 import java.util.ArrayList;
 
-public class App
+public class AppNoticiasMarca
 {
 	public static void main(String args[]) throws Exception
 	{

@@ -1,4 +1,4 @@
-/*
+	/*
 
 API: https://jsoup.org/apidocs/index.html
 
@@ -40,14 +40,15 @@ public class Webscrapping
 					}
 					catch(NumberFormatException e)
 					{
-
+						System.out.println("El dato " + numeroDeCasosDia + " no es numérico y no se pudo agregar");
 					}
 				}
 			}
 		}
 		catch(java.io.IOException ioe)
 		{
-
+			System.out.println("Error de I/O: " + ioe.toString());
+			//ioe.printStackTrace();
 		}
 		return casos;
 	}
