@@ -47,7 +47,7 @@ public class Webscrapping
 		}
 		catch(java.io.IOException ioe)
 		{
-			System.out.println("Error de I/O: " + ioe.toString());
+			System.out.println("Error de I/O");
 			//ioe.printStackTrace();
 		}
 		return casos;
