@@ -30,7 +30,7 @@ public class MiHilo extends Thread
 
 2. Utilizar una ventana como clase que poseerá el método run (Runnable) que NO será un Thread e indicarle que el Thread a crear utilizará ese método run.
 
-Esta forma de trabajo es muy recomendable cuando las tareas a realizar están muy acopladas con la ventana. Solo se tiene la posibilidad de trabajar con una sola funcionalidad con un run.
+Esta forma de trabajo es muy recomendable cuando las tareas a realizar están muy acopladas con la ventana. Solo se tiene la posibilidad de trabajar con una sola funcionalidad con un run. 
 
 ```java
 public class JVentana extends JFrame implements Runnable
