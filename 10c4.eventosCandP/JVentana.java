@@ -71,6 +71,7 @@ public class JVentana extends JFrame
         this.add(new JLabel("Pulsa en las teclas de cursor", JLabel.CENTER));
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(300, 300);
+
         //A tener en cuenta:
         //this.setFocusable(true);
         //this.setFocusTraversalKeysEnabled(false);
