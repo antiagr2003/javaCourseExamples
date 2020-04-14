@@ -22,7 +22,7 @@ public class AppNoticiasMarca
 	public static void main(String args[]) throws Exception
 	{
 		//Ejemplo de Bolsa
-		Document doc = Jsoup.connect("https://www.marketwatch.com/investing/stock/aapl").get();
+			 doc = Jsoup.connect("https://www.marketwatch.com/investing/stock/aapl").get();
 		System.out.println(doc.title());
 
 		//Elements noticias = doc.select("h2.mod-title > a:contains(MADRID)");
