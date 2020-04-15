@@ -61,8 +61,28 @@ public class Persona implements java.io.Serializable
     @Override
     public String toString()
     {
-        return "Nombre: " + nombre + " NIF: " +
-         nif + " Edad: " + edad;
+        StringBuilder sb = new StringBuilder();
+        sb.append("Nombre: ")
+          .append(nombre)
+          .append(" Edad: ")
+          .append(edad)
+          .append(" NIF: ")
+          .append(nif);
+        return sb.toString();
+    }
+
+    //GSON
+    public String toJSON()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.append("{nombre: \"")
+          .append(nombre)
+          .append("\", edad: ")
+          .append(edad)
+          .append(", nif: \"")
+          .append(nif)
+          .append("\"}");
+        return sb.toString();
     }
 
     @Override

@@ -12,7 +12,7 @@ public class AppEscribir
 
         try
         {
-            FileOutputStream fos = new FileOutputStream("personas.obj"); //.ser
+            FileOutputStream fos = new FileOutputStream("datos/personas.obj"); //.ser
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(p1);
             oos.writeObject(p2);
