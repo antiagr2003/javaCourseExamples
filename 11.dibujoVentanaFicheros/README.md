@@ -13,4 +13,10 @@ El programa sólo trabajará con un fichero y no dará la posibilidad de especif
 
 La funcionalidad de Entrada/Salida se programará en una clase independiente (IOFigura) separando así la lógica de ui, objetos y entrada y salida. Por ello, esta clase se encontrará en un nuevo paquete denominado practica11.io.
 
+![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/11.dibujoVentanaFicheros/diagramaPaquetes.jpg)
+
+![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/11.dibujoVentanaFicheros/diagramaSecuencia.jpg)
+
+
+
 
