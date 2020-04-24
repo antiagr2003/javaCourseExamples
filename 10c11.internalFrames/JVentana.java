@@ -20,7 +20,11 @@ public class JVentana extends JFrame
 	public JVentana(String titulo)
 	{
 		this.setTitle(titulo);
-		this.getContentPane().setLayout(new BorderLayout());
+		this.setLayout(new BorderLayout());
+		JPanel pnlContainer = new JPanel(new BorderLayout());
+		//pnlContainer.setPreferredSize(new Dimension(400, 300));
+		
+
 		btnOcultar.setEnabled(false);
 		
 		//-------- Crear un Toolbar -----
@@ -35,6 +39,11 @@ public class JVentana extends JFrame
 				{
 					//-------- Crear un Internal Frame -----
 					JInternalFrame ifr1=new JInternalFrame("Internal " + pos/20);
+					JPanel pnlInternal = new JPanel(new FlowLayout());
+					pnlInternal.add(new JButton("x"));
+					pnlInternal.add(new JButton("y"));
+					pnlInternal.add(new JButton("z"));
+					ifr1.add(new JScrollPane(pnlInternal));
 					ifr1.setSize(100,100);
 					ifr1.setVisible(true);
 					ifr1.setLocation(new Point(pos,pos));
@@ -79,9 +88,12 @@ public class JVentana extends JFrame
 			});
 
 		desktop = new JDesktopPane(); 
-		 
-		this.getContentPane().add(toolBar, BorderLayout.NORTH); 
- 		this.getContentPane().add(desktop, BorderLayout.CENTER); 
+		desktop.setPreferredSize(new Dimension(400, 300));
+		
+		pnlContainer.add(desktop, BorderLayout.CENTER);
+
+		this.add(toolBar, BorderLayout.NORTH); 
+ 		this.add(new JScrollPane(pnlContainer), BorderLayout.CENTER); 
  		this.setSize(400,300);
  		
  		this.setVisible(true);
