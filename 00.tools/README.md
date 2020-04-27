@@ -24,13 +24,33 @@ Repetir esta operación dos veces:
 
 ![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/OBS.jpg) 
 
-### Preparación del escenario del examen
+Las fuentes que se deberán configurar serán:
+- Captura de salida de audio (altavoces: lo que suena por los altavoces del PC)
+- Captura de entrada de audio (micrófono: lo que hablamos nosotros)
+- Captura de pantalla (el escritorio)
+- Webcam del PC
+- Webcam del Teléfono móvil
 
-- Se deberá posicionar el móvil en un lugar que permita visualizar CLARAMENTE la mesa y las manos del alumno.
+La calidad de salida del vídeo a generar (MKV) la de por defecto.
+
+
+## Antes del Examen
+
+### Escenario del examen
+- Se deberá colocar el móvil en un lugar que permita visualizar CLARAMENTE la mesa y las manos del alumno.
+- Además, deberá cubrir los alrededores de la mesa de trabajo. No servirá un primer plano de la mesa solamente, por ejemplo.
 - No se deberá tener NADA sobre la mesa.
+- No se podrán utilizar auriculares, se utilizarán los altavoces del ordenador.
 
 ![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/DesktopNew.jpg) 
 
-### Examen
-El alumno deberá grabar un vídeo corto de 1 minuto y subirlo a Moodle en la entrega "Prueba de escenario". El profesor deberá dar el VºBº a cada escenario que deberá ser el mismo que el del día del examen.
+### Validación del escenario
+El alumno deberá grabar un vídeo corto de 1 minuto y subirlo a Moodle en la entrega "Prueba de escenario". El profesor deberá dar el VºBº a cada escenario que deberá ser idéntico al del día del examen.
+
+## Resolución de problemas
+
+Si desde OBS no puedo capturar el escritorio porque se ve todo negro, posiblemente sea porque se posee una tarjeta NVIDIA
+
+Solución:
+![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/OBSpantallaNegro.jpg) 
 
