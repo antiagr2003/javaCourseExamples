@@ -6,7 +6,7 @@ Software de grabación de escritorio y fuentes externas (webcam y móvil) que gr
 
 https://obsproject.com/es/download
 
-### Iriun Webcam 
+#### Iriun Webcam 
 Software que permite utilizar el móvil como segunda webcam.
 
 - Software para el PC: https://iriun.com/. 
@@ -16,11 +16,20 @@ Software que permite utilizar el móvil como segunda webcam.
 - Software para el móvil: 
 	- Se conectará al software servidor anterior previamente ejecutado.
 
+### Configuración de OBS
+
+Repetir esta operación dos veces:
+- a) Webcam del PC
+- b) Webcam del Teléfono móvil
 
 ![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/OBS.jpg) 
 
-![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/Desktop.jpg) 
+### Preparación del escenario del examen
 
+- Se deberá posicionar el móvil en un lugar que permita visualizar CLARAMENTE la mesa y las manos del alumno (la imagen que se muestra no es la mejor vista).
+- No se deberá tener NADA sobre la mesa (la mesa que se muestra es un mal ejemplo).
+
+![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/Desktop.jpg) 
 
 ### Examen
 El alumno deberá grabar un vídeo corto de 1 minuto y subirlo a Moodle en la entrega "Prueba de escenario". El profesor deberá dar el VºBº a cada escenario que deberá ser el mismo que el del día del examen.
