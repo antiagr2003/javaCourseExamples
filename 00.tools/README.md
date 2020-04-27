@@ -26,8 +26,8 @@ Repetir esta operación dos veces:
 
 ### Preparación del escenario del examen
 
-- Se deberá posicionar el móvil en un lugar que permita visualizar CLARAMENTE la mesa y las manos del alumno (la imagen que se muestra no es la mejor vista).
-- No se deberá tener NADA sobre la mesa (la mesa que se muestra es un mal ejemplo).
+- Se deberá posicionar el móvil en un lugar que permita visualizar CLARAMENTE la mesa y las manos del alumno.
+- No se deberá tener NADA sobre la mesa.
 
 ![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/DesktopNew.jpg) 
 
