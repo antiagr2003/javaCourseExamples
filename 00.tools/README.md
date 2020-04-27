@@ -53,4 +53,13 @@ Si desde OBS no puedo capturar el escritorio porque se ve todo negro, posiblemen
 
 Solución:
 ![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/OBSpantallaNegro.jpg) 
+## Examen
 
+Solo se podrán tener las siguientes aplicaciones abiertas:
+1. Sublime Text
+2. Símbolo del sistema o consola del SO para compilar
+3. Explorador de Windows o equivalente en otros sistemas para visualizar los archivos de una forma gráfica
+4. Navegador (Chrome o equivalente) con una sola pestaña abierta a Moodle para descargar y subir el examen.
+
+
+No se permitirá tener ninguna ventana más abierta ni se podrá consultar la API del compilador.
