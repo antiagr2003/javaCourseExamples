@@ -1,6 +1,7 @@
 # ![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/images/logo.jpg) Herramientas necesarias para el examen
 ## by David Contreras
-### OBS
+### Herramientas
+#### OBS
 Software de grabación de escritorio y fuentes externas (webcam y móvil) que grabará todo el examen en un fichero de vídeo .mkv. Este fichero deberá ser subido al finalizar el examen.
 
 https://obsproject.com/es/download
@@ -19,4 +20,8 @@ Software que permite utilizar el móvil como segunda webcam.
 ![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/OBS.jpg) 
 
 ![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/Desktop.jpg) 
+
+
+### Examen
+El alumno deberá grabar un vídeo corto de 1 minuto y subirlo a Moodle en la entrega "Prueba de escenario". El profesor deberá dar el VºBº a cada escenario que deberá ser el mismo que el del día del examen.
 
