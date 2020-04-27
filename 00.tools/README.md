@@ -1,6 +1,9 @@
 # ![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/images/logo.jpg) Examen online de la convocatoria ordinaria
 ## Programación Orientada a Objetos
 ### Herramientas
+
+Una vez instaladas las dos herramientas en el PC se recomienda ejecutar primero Iriun y posteriormente OBS.
+
 #### OBS
 Software de grabación de escritorio y fuentes externas (webcam y móvil) que grabará todo el examen en un fichero de vídeo .mkv. Este fichero deberá ser subido al finalizar el examen.
 
@@ -15,12 +18,6 @@ Software que permite utilizar el móvil como segunda webcam.
 	- Posiblemente habrá que abrir el firewall para que se comunique con el móvil.
 - Software para el móvil: Iriun Webcam for PC and Mac
 	- Se conectará al software servidor anterior previamente ejecutado.
-
-#### Epoc Webcam (Mac)
-Software que permite utilizar el móvil como segunda webcam.
-
-- Software para el PC: https://www.kinoni.com/
-- Software para el móvil: EpocCam 
 
 ### Configuración de OBS en Windows
 
@@ -59,6 +56,14 @@ Si desde OBS no puedo capturar el escritorio porque se ve todo negro, posiblemen
 
 Solución:
 ![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/OBSpantallaNegro.jpg)
+
+### En Mac no encuentro la cámara de Iriun
+
+Me aseguro de ejecutar el programa IriunWebCam antes de iniciar OBS.
+
+Si me sigue sin funcionar, ejecutar QuickTimePlayer:
+1. Seleccionar File --> New Movie Recording
+2. En el menú próximo al botón de grabar, seleccionar Iriun Webcam.
 
 
 ## Examen
