@@ -29,7 +29,7 @@ Repetir esta operación dos veces:
 - Se deberá posicionar el móvil en un lugar que permita visualizar CLARAMENTE la mesa y las manos del alumno (la imagen que se muestra no es la mejor vista).
 - No se deberá tener NADA sobre la mesa (la mesa que se muestra es un mal ejemplo).
 
-![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/Desktop.jpg) 
+![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/DesktopNew.jpg) 
 
 ### Examen
 El alumno deberá grabar un vídeo corto de 1 minuto y subirlo a Moodle en la entrega "Prueba de escenario". El profesor deberá dar el VºBº a cada escenario que deberá ser el mismo que el del día del examen.
