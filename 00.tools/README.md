@@ -1,5 +1,5 @@
-# ![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/images/logo.jpg) Herramientas necesarias para el examen
-## by David Contreras
+# ![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/images/logo.jpg) Examen online de la convocatoria ordinaria
+## Programación Orientada a Objetos
 ### Herramientas
 #### OBS
 Software de grabación de escritorio y fuentes externas (webcam y móvil) que grabará todo el examen en un fichero de vídeo .mkv. Este fichero deberá ser subido al finalizar el examen.
