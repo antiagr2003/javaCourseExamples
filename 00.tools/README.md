@@ -6,17 +6,23 @@ Software de grabación de escritorio y fuentes externas (webcam y móvil) que gr
 
 https://obsproject.com/es/download
 
-#### Iriun Webcam 
+#### Iriun Webcam (Windows)
 Software que permite utilizar el móvil como segunda webcam.
 
 - Software para el PC: https://iriun.com/. 
 	- Se capturará el vídeo a 640x480. 
 	- No será necesario que se arranque cada vez que iniciamos el equipo.
 	- Posiblemente habrá que abrir el firewall para que se comunique con el móvil.
-- Software para el móvil: 
+- Software para el móvil: Iriun Webcam for PC and Mac
 	- Se conectará al software servidor anterior previamente ejecutado.
 
-### Configuración de OBS
+#### Epoc Webcam (Mac)
+Software que permite utilizar el móvil como segunda webcam.
+
+- Software para el PC: https://www.kinoni.com/
+- Software para el móvil: EpocCam 
+
+### Configuración de OBS en Windows
 
 Repetir esta operación dos veces:
 - a) Webcam del PC
@@ -33,7 +39,6 @@ Las fuentes que se deberán configurar serán:
 
 La calidad de salida del vídeo a generar (MKV) la de por defecto.
 
-
 ## Antes del Examen
 
 ### Escenario del examen
@@ -48,11 +53,14 @@ La calidad de salida del vídeo a generar (MKV) la de por defecto.
 El alumno deberá grabar un vídeo corto de 1 minuto y subirlo a Moodle en la entrega "Prueba de escenario". El profesor deberá dar el VºBº a cada escenario que deberá ser idéntico al del día del examen.
 
 ## Resolución de problemas
+### Pantalla de escritorio negra en OBS
 
 Si desde OBS no puedo capturar el escritorio porque se ve todo negro, posiblemente sea porque se posee una tarjeta NVIDIA
 
 Solución:
-![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/OBSpantallaNegro.jpg) 
+![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/OBSpantallaNegro.jpg)
+
+
 ## Examen
 
 Solo se podrán tener las siguientes aplicaciones abiertas:
