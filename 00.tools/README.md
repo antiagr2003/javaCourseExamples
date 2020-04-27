@@ -5,8 +5,6 @@ Software de grabación de escritorio y fuentes externas (webcam y móvil) que gr
 
 https://obsproject.com/es/download
 
-![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/OBS.jpg) 
-
 ### Iriun Webcam 
 Software que permite utilizar el móvil como segunda webcam.
 
@@ -16,4 +14,7 @@ Software que permite utilizar el móvil como segunda webcam.
 	- Posiblemente habrá que abrir el firewall para que se comunique con el móvil.
 - Software para el móvil: 
 	- Se conectará al software servidor anterior previamente ejecutado.
+
+
+![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/OBS.jpg) 
 
