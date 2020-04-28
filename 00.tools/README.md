@@ -9,6 +9,8 @@ Software de grabación de escritorio y fuentes externas (webcam y móvil) que gr
 
 https://obsproject.com/es/download
 
+Se optimizará para la grabación de contenidos.
+
 #### Iriun Webcam (Windows)
 Software que permite utilizar el móvil como segunda webcam.
 
@@ -52,10 +54,18 @@ El alumno deberá grabar un vídeo corto de 1 minuto y subirlo a Moodle en la en
 ## Resolución de problemas
 ### Pantalla de escritorio negra en OBS
 
-Si desde OBS no puedo capturar el escritorio porque se ve todo negro, posiblemente sea porque se posee una tarjeta NVIDIA
+Si desde OBS no puedo capturar el escritorio porque se ve todo negro, posiblemente sea porque se posee una tarjeta NVIDIA. Cuando se poseen varias tarjetas en el ordenador, las NVIDIA suelen dar problemas y el programa OBS debe utilizar la otra tarjeta. 
 
 Solución:
 ![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/OBSpantallaNegro.jpg)
+
+### Error de Codificación del archivo de salida: ENCODER
+
+Si muestra un error relativo a la codificación similar a este: NV_ENC_ERR_INVALID_VERSION, activadar la codificación del archivo de salida por Software.
+
+Solución:
+![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/OBSEncoder.jpg)
+
 
 ### En Mac no encuentro la cámara de Iriun
 
