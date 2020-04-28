@@ -4,7 +4,7 @@ import java.awt.event.*;
 import java.util.Vector;
 
 
-class App extends JFrame
+public class App extends JFrame
 {
 	
 	JMenuItem uno, dos, tres, cuatro, cinco;
@@ -15,7 +15,7 @@ class App extends JFrame
 		new App();
 	}
 
-	App()
+	public App()
 	{
 		this.setTitle("Paneles");
 		JPanel pnlBase = new JPanel(new GridLayout(5,1));
