@@ -61,7 +61,7 @@ Solución:
 
 ### Error de Codificación del archivo de salida: ENCODER
 
-Si muestra un error relativo a la codificación similar a este: NV_ENC_ERR_INVALID_VERSION, activadar la codificación del archivo de salida por Software.
+Si muestra un error relativo a la codificación (similar a este NV_ENC_ERR_INVALID_VERSION), activad la codificación del archivo de salida por Software. Inicialmente se elegirá la opción de Software (x264). Si el ordenador fuese muy lento, se elegiría la opción Software (x264 bajo uso de CPU….).
 
 Solución:
 ![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/OBSEncoder.jpg)
