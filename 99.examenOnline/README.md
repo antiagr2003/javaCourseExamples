@@ -9,7 +9,7 @@
 - Solo se permitirá tener sobre la mesa una hora y un boli/lápiz para tomar notas.
 - No se podrán utilizar auriculares, se utilizarán los altavoces del ordenador.
 
-![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/DesktopNew.jpg) 
+![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/99.examenOnline/DesktopNew.jpg) 
 
 ### Validación del escenario
 El alumno deberá grabar un vídeo corto de 1 minuto y subirlo a Moodle en la entrega "Prueba de escenario". El profesor deberá dar el VºBº a cada escenario que deberá ser idéntico al del día del examen.
@@ -21,14 +21,14 @@ El alumno deberá grabar un vídeo corto de 1 minuto y subirlo a Moodle en la en
 Si desde OBS no puedo capturar el escritorio porque se ve todo negro, posiblemente sea porque se posee una tarjeta NVIDIA. Cuando se poseen varias tarjetas en el ordenador, las NVIDIA suelen dar problemas y el programa OBS debe utilizar la otra tarjeta. 
 
 Solución:
-![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/OBSpantallaNegro.jpg)
+![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/99.examenOnline/OBSpantallaNegro.jpg)
 
 ### Error de Codificación del archivo de salida: ENCODER
 
 Si muestra un error relativo a la codificación (similar a este NV_ENC_ERR_INVALID_VERSION), activad la codificación del archivo de salida por Software. Inicialmente se elegirá la opción de Software (x264). Si el ordenador fuese muy lento, se elegiría la opción Software (x264 bajo uso de CPU….).
 
 Solución:
-![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/00.tools/OBSEncoder.jpg)
+![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/99.examenOnline/OBSEncoder.jpg)
 
 
 ### En Mac no encuentro la cámara de Iriun
