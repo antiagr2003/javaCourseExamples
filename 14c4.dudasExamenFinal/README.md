@@ -1,4 +1,5 @@
 # Examen
+
 ## Normas:
 - Preguntas solo en los primeros 15 minutos del examen.
 - De forma excepcional se podrá comunicar con el profesor por chat privado o realizando una pregunta de voz si es - importante.
