@@ -4,7 +4,8 @@ termostato
 Atributos:
 - temperaturaActual
 - temperaturaDeseada
-Métodos:
+
+Métodos básicos necesarios:
 //getters
 - getTemperaturaActual()
 - getTemperaturaDeseada()
@@ -21,6 +22,7 @@ temp2 = termostato2.getTemperaturaActual()
 
 print (temp1) --> 21
 termostato1.setTemperaturaDeseada(23)
+
 //Calderas...
 temp1 = termostato1.getTemperaturaDeseada() //23
 temp2 = termostato1.getTemperaturaActual() //21
