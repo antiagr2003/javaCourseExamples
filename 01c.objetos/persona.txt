@@ -5,7 +5,7 @@ persona
 Atributos:
 - nombre "Luis"
 - edad   22
-Métodos:
+Métodos básicos necesarios:
 - getNombre()
 - getEdad()
 - setNombre(nombre)
