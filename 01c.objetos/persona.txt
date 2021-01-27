@@ -1,0 +1,22 @@
+
+
+persona
+
+Atributos:
+- nombre "Luis"
+- edad   22
+
+
+
+edad = p1.getEdad()
+print (edad) --> 18
+
+p1.setEdad(edad+1) #cumpleaños
+
+p1.setEdad(p1.getEdad()+1) #cumpleaños
+
+
+len(lista)
+
+lista.len()
+
