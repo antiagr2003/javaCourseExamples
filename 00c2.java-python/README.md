@@ -4,10 +4,12 @@ Una buena web para epxlicar sus diferencias: https://www.softwaretestinghelp.com
 
 ### Variables
 
+#### Java 
 ```java
 String nombre = "Luis";
 int edad = 23;
 ```
+#### Python
 ```python
 nombre = 'Luis'
 edad = 23
@@ -15,25 +17,28 @@ edad = 23
 
 ### Funciones
 
+#### Java 
 ```java
 String getNombre()
 {
 	return nombre;
 }
-```
-```python
-def get_nombre():
-    return z
-```
 
-```java
 void setNombre(String unNombre)
 {
 	nombre = unNombre;
 }
+
+...o también se podría programar así...
+
+void setNombre(String unNombre){nombre = unNombre;}
 ```
 
+#### Python
 ```python
+def get_nombre():
+    return nombre
+
 def set_nombre(x):
     nombre = x
 ```
