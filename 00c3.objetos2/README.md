@@ -7,7 +7,7 @@ En la clase de hoy se han visto los siguientes conceptos básicos:
 - Concepto de ocultación de atributos.
 - Concepto de interfaz de un objeto: métodos visibles para el resto de objetos.
 - Visión de los 4 tipos de interfaces distintos que puede tener un objeto.
-- Transición de Python a Java: compilación y sintaxis básica.
+- Transición de Python a Java: compilación y sintáxis básica.
 
 ## Sintaxis básica
 
@@ -72,12 +72,14 @@ class Persona
 }
 ```
 
-## Interfaz del objeto
+## Interfaz del objeto y mensajes
 
 El acceso directo a los atributos de un objeto:
 ```python
 persona.edad = -22
 ```
+
+La estructura de un mensaje es: objeto.método(). Trabajar a través de métodos que accedan al atributo es más engorroso, pero en muchos casos más seguro.
 
 ```java
 persona.getEdad(); //--> 0
