@@ -1,7 +1,10 @@
 public class Personaje
 {
 	//Atributo de CLASE
-	String ISLA;
+	public final static int VIDA_MINIMA = 0;
+	public final static int VIDA_MAXIMA = 100;
+
+	static String ISLA;
 
 	//Atributo de Instancia
 	int vida;
@@ -9,25 +12,29 @@ public class Personaje
 
 	Personaje()
 	{
-		this.vida = 100;
-		this.material = 0;
+		this(100, 0);
 	}
 
 	Personaje(int vida)
 	{
-		this.vida = vida;
+		this.setVida(vida);
 	}
 
 	Personaje(int vida, int material)
 	{
-		this.vida = vida;
+		this.setVida(vida);
 		this.material = material;
 	}
 
-
-	void setIsla(String isla)
+	static void setISLA(String isla)
 	{
-		this.isla = isla;
+		ISLA = isla;
+		//ERROR: vida = 99;
+	}
+
+	static String getISLA()
+	{
+		return ISLA;
 	}
 
 	int getVida()
@@ -42,7 +49,8 @@ public class Personaje
 
 	void setVida(int vida)
 	{
-		this.vida = vida;
+		if(vida > VIDA_MINIMA && vida <= VIDA_MAXIMA)
+			this.vida = vida;
 	}
 
 	void setMaterial(int material)
@@ -52,6 +60,6 @@ public class Personaje
 
 	String getInfo()
 	{
-		return isla + "-->" + vidad + "-" + material;
+		return ISLA + "-->" + vida + "-" + material;
 	}
 }
