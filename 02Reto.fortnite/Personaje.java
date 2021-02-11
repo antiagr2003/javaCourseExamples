@@ -63,9 +63,15 @@ public class Personaje
 		vida -= herida;
 	}
 
-	public void picar(...)
+	//ToDo: public void picar(...)
+	public void picar(Arbol arbol)
 	{
-		......
+		//ToDo
+		this.material += arbol.getMaterial();
+		arbol.setMaterial(0);
+
+		//material += arbol.picar();
+		//Fin ToDo
 	}
 
 	public boolean isVivo()
