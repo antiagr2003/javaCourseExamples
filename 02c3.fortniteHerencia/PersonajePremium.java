@@ -35,6 +35,6 @@ public class PersonajePremium extends Personaje
 	public String getInfo()
 	{
 		//return ISLA + "-->" + vida + "-" + material + skins;
-		return super.getInfo() + this.getVida() + skins;
+		return super.getInfo() + skins;
 	}	
 }

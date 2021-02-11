@@ -6,9 +6,7 @@ public class App
 	{
 		Personaje.setISLA("Mi Isla");
 
-		//Personaje personaje1 = new Personaje();
-		PersonajePremium personajePremium1 = new PersonajePremium("Platanito");
+		PersonajePremium personajePremium1 = new PersonajePremium(100, 50, "Platanito");
 		System.out.println(personajePremium1.getInfo());
-
 	}
 }
