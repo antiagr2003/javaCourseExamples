@@ -32,6 +32,7 @@ public class PersonajePremium extends Personaje
 		this.skins = skins;
 	}	
 
+	@Override
 	public String getInfo()
 	{
 		//return ISLA + "-->" + vida + "-" + material + skins;
