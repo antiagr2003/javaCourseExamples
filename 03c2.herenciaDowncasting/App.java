@@ -10,10 +10,16 @@ public class App
 		PersonajePremium personajePremium = new PersonajePremium(10, 10, "Platanito");
 		personaje = personajePremium; //UPCASTNG
 		personajePremium = null;
-		System.out.println(personaje.getInfo());
-		//ERROR: System.out.println(personaje.getSkins());
 
-		personajePremium = (PersonajePremium) personaje; //DOWNCASTING
-		System.out.println(personajePremium.getSkins());
+		if(personaje instanceof PersonajePromocion)
+		{
+			PersonajePromocion personajePromo = (PersonajePromocion) personaje; //DOWNCASTING
+		}
+		
+		if(personaje instanceof PersonajePremium)
+		{
+			PersonajePremium personajePremium2 = (PersonajePremium) personaje; //DOWNCASTING
+			System.out.println(personajePremium2.getSkins());
+		}		
 	}
 }
