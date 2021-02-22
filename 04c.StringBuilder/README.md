@@ -4,7 +4,6 @@ Clase Persona con ejemplo de concatenación de atributos
 
 
 ```Java
-/* Clase auxiliar creada como sugerencia de un alumno */
 public class Persona
 {
     private String nombre;
