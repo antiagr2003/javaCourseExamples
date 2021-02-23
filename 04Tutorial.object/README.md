@@ -123,10 +123,10 @@ clase.getName()
 
 ### ¿Qué ventajas me proporciona que Object sea la superclase de todos los objetos Java?
 
-Inicialmente, que todos los objetos hereden de Object significará que todos ellos heredarán todos los métodos del interfaz de Object.
+Que nuestras clases hereden de Object significará que heredarán todos los métodos del interfaz de Object.
 https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
 
-Si saber muy bien el significado de este interfaz, vemos cómo se pueden invocar los métodos del interfaz de Object.
+Aunque no entendamos el significado de los métodos que posee Object, vemos cómo se pueden invocar desde cualquier objeto.
 
 
 ```Java
@@ -166,7 +166,7 @@ p.toString()
 
 ### ¿Para que nos sirve esta implementación genérica?
 
-La ventaja es que Object nos proporciona el interfaz genérico que cada objeto deberá redefinir (@Override) para tener su comportamiento específico. La gran ventaja es que todos los objetos responderán a estos métodos.
+La ventaja es que Object nos proporciona el interfaz genérico que cada objeto deberá redefinir (@Override) para tener su comportamiento específico, por lo que todos los objetos sabrán responder a estos métodos.
 
 ## Método _public String toString()_
 
@@ -256,7 +256,7 @@ p2.toString();
 
 
 
-Dado que el método _toString()_ es el encargado de convertir cualquier objetoa una cadena de caracteres, es el utilizado por muchos objetos Java para ser invicado pro defecto. Por ejemplo, en el caso de mostrar información por consola.
+Dado que el método _toString()_ es el encargado de convertir cualquier objeto a una cadena de caracteres, es el utilizado por muchos objetos Java para ser invocado pro defecto. Por ejemplo, en el caso de mostrar información por consola.
 
 
 ```Java
