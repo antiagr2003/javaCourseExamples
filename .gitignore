@@ -17,6 +17,10 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+# Temporal folders
+.ipynb_checkpoints/
+_backup/
+
 # Package Files #
 *.jar
 *.war
