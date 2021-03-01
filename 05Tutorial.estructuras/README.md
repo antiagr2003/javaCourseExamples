@@ -1,29 +1,37 @@
 # Bucles y estructuras de control
 
 Documentación:
-https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html
-https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html
+- https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html
+- https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html
 
-Los bucles se utilizan para ejecutar un conjunto de instrucciones varias veces basándose siempre en una condición que decidirá si se sigue repitiendo o no. Los bucles que vamos a estudiar son los bucles for, while y do-while ya vistos anteriormente en C.
+Los bucles se utilizan para ejecutar un conjunto de instrucciones varias veces basándose siempre en una condición que decidirá si se sigue repitiendo o no. Los bucles que vamos a estudiar son los bucles for, while y do-while ya vistos anteriormente en otros lenguajes.
 
 Bucle for permite ejecutar el conjunto de sentencias escritas en él en un número determinado de veces, el cual está fijado a principio del bucle y funciona al igual que un contador. Su expresión típica es:
 
-for(inicialización, condición booleana, incremento){
-sentencias
+```java
+for(inicialización del índice;condición booleana;incremento del índice)
+{
+    sentencias
 }
+```
 
 El bucle while ejecuta las instrucciones de las llaves mientras la condición sea verdadera. Un bucle while viene definido por:
 
-while(condición){
-sentencias
+```java
+while(condición booleana)
+{
+    sentencias
 }
+```
 
 Finalmente, el bucle do-while es idéntico al while, solo que en este caso la condición se evalua al final del bucle, por lo que el conjunto de sentencias incluido en las llaves se ejecuta al menos una vez. La forma de este bucle es:
 
-do{
-sentencias
-}while(condición);
-
+```java
+do
+{
+    sentencias
+}while(condición booleanda);_
+```
 
 ## Ejemplo de bucle for
 
