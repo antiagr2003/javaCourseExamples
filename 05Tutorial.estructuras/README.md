@@ -30,7 +30,7 @@ Finalmente, el bucle do-while es idéntico al while, solo que en este caso la co
 do
 {
     sentencias
-}while(condición booleanda);_
+}while(condición booleanda);
 ```
 
 ## Ejemplo de bucle for
