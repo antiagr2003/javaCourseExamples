@@ -1,4 +1,4 @@
-# 03. Clase String
+# Clase String
 
 https://docs.oracle.com/javase/9/docs/api/java/lang/String.html
 
@@ -127,7 +127,7 @@ for(String s:cadena.split(" "))
     es
     un
     ejemplo
-
+    
 
 #### indent(int)
 
@@ -153,7 +153,7 @@ cadena.indent(2);
 
 
       Hola esto es un ejemplo
-
+    
 
 
 
@@ -187,7 +187,7 @@ cadena.indent(2);
       es
       un
       ejemplo
-
+    
 
 
 
@@ -244,7 +244,82 @@ cadena.replaceAll("[0-9]", "_")
 
 #### Reto
 ---
-Elimina los espacios en blanco de la palabra palabra " hola ", extrae los 3 primeros caracteres, conviértelos a mayúsculas y quédate con el segundo caracter: '
+Elimina los espacios en blanco de la palabra palabra " hola ", extrae los 3 primeros caracteres, conviértelos a mayúsculas y quédate con el segundo caracter: 'O'
+
+
+```Java
+
+```
+
+### Particularidades de los objetos String
+
+Los objetos String, además de ser objetos inmutables, tienen la particularidad de pdoer crearse de dos formas:
+- Mediante el constructor, como el resto de objetos: en este caso la reserva de memoria se realiza de forma estándar.
+- Mediante la asignación básica (=) y la utilización de las comillas dobles.
+
+#### Constructor
+
+
+```Java
+String s1 = new String("Hola");
+String s2 = new String("Hola");
+```
+
+En este caso se habrán creado dos instancias de la clase String, dos reservas de memoria, como con el resto de objetos. Hay que recordar que el operador ==, en el caso de trabajar con objetos, responde a si físicamente dos objetos apuntan a la misma zona de memoria.
+
+
+```Java
+s1==s2
+```
+
+
+
+
+    false
+
+
+
+Por tanto, para comparar objetos siempre utilizaremos el método equals.
+
+
+```Java
+s1.equals(s2)
+```
+
+
+
+
+    true
+
+
+
+#### Asignación directa
+
+En el caso de utilizar el operador de asignación, la forma de creación será distinta. Los objetos String creados así se guardarán en una zona de memoria especial a forma de constantes (pila de constantes). Cada vez que se haga refencia a ese objeto, se referenciará y no se volverá a crear.
+
+
+```Java
+String s1 = "Hola"
+```
+
+La línea anterior crea el objeto String "Hola" en la pila. Si volviéramos a crear nuevamente una referencia con el mismo valor, se hara referencia al mismo objeto, misma posición de memoria.
+
+
+```Java
+String s2 = "Hola"
+```
+
+
+```Java
+s1==s2
+```
+
+
+
+
+    true
+
+
 
 
 ```Java
