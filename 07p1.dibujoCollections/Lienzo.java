@@ -1,26 +1,23 @@
 import java.awt.Canvas;
 import java.awt.Graphics;
 
+import java.util.Collection;
+import java.util.ArrayList;
+
 
 public class Lienzo extends Canvas
 {
-	Figura figuras[] = new Figura[10];
+	private Collection<Figura> figuras = new ArrayList<Figura>();
 
-	void addFigura(Figura c)
+	public void addFigura(Figura figura)
 	{
-		for(int i=0;i<figuras.length;i++)
-			if(figuras[i]==null)
-			{
-				figuras[i] = c;
-				i=figuras.length;
-			}
+		figuras.add(figura);
 	}
 
 	@Override
 	public void paint(Graphics g)
 	{
-		for(int i=0;i<figuras.length;i++)
-			if(figuras[i]!=null)
-				figuras[i].pintar(g);
+		for(Figura figura:figuras)
+			figura.pintar(g);
 	}
 }

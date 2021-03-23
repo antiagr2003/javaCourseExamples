@@ -2,10 +2,10 @@ import java.awt.Color;
 
 public abstract class Figura
 {
-	int x;
-	int y;
-	boolean relleno;
-	Color color;
+	protected int x;
+	protected int y;
+	protected boolean relleno;
+	private Color color;
 
 	/** 
 		Inicializa todos los atributos del objeto 
@@ -15,7 +15,7 @@ public abstract class Figura
 		@param color Color de la figura
 		
 	*/
-	Figura(int x, int y, boolean relleno, Color color)
+	public Figura(int x, int y, boolean relleno, Color color)
 	{
 		this.setX(x);
 		this.setY(y);
@@ -23,50 +23,50 @@ public abstract class Figura
 		this.color = color;
 	}
 
-	int getX()
+	public int getX()
 	{
 		return x;
 	}
 
-	int getY()
+	public int getY()
 	{
 		return y;
 	}
 
-	void setX(int x)
+	public void setX(int x)
 	{
 		if(x>0 && x<800)
 			this.x = x;
 	}
 
-	void setY(int y)
+	public void setY(int y)
 	{
 		if(y>0 && y<600)
 			this.y = y;
 	}
 
 
-	void setRelleno(boolean relleno)
+	public void setRelleno(boolean relleno)
 	{
 		this.relleno = relleno;
 	}
 
-	boolean getRelleno()
+	public boolean getRelleno()
 	{
 		return relleno;
 	}
 
-	void setColor(Color color)
+	public void setColor(Color color)
 	{
 		this.color = color;
 	}
 
-	Color getColor()
+	public Color getColor()
 	{
 		return color;
 	}	
 
-	void pintar(java.awt.Graphics g)
+	public void pintar(java.awt.Graphics g)
 	{
 		g.setColor(color);
 	}

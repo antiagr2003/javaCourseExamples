@@ -2,7 +2,7 @@ import java.awt.Color;
 
 public class Circulo extends Figura
 {
-	int radio;
+	private int radio;
 
 	/** 
 		Inicializa todos los atributos del objeto 
@@ -10,13 +10,13 @@ public class Circulo extends Figura
 		@param y Posición x de la ventana en pixels
 		@param lado Tamaño del cuadrado en pixels
 	*/
-	Circulo(int x, int y, boolean relleno, Color color, int radio)
+	public Circulo(int x, int y, boolean relleno, Color color, int radio)
 	{
 		super(x, y, relleno, color);
 		this.setRadio(radio);
 	}
 
-	void setRadio(int radio)
+	public void setRadio(int radio)
 	{
 		if(radio>1 && radio<600)
 			this.radio = radio;
@@ -24,13 +24,13 @@ public class Circulo extends Figura
 			this.radio = 2;
 	}
 
-	int getRadio()
+	public int getRadio()
 	{
 		return radio;
 	}
 
 	@Override
-	void pintar(java.awt.Graphics g)
+	public void pintar(java.awt.Graphics g)
 	{
 		super.pintar(g);
 		if(relleno)

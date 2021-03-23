@@ -2,19 +2,19 @@ import java.awt.Color;
 
 public class Cuadrado extends Figura
 { 
-	int lado;
+	private int lado;
 
 	/** 
 		Inicializa todos los atributos del objeto 
 		@param lado Tamaño del cuadrado en pixels
 	*/
-	Cuadrado(int x, int y, boolean relleno, Color color, int lado)
+	public Cuadrado(int x, int y, boolean relleno, Color color, int lado)
 	{
 		super(x, y, relleno, color);
 		this.setLado(lado);
 	}
 
-	void setLado(int lado)
+	public void setLado(int lado)
 	{
 		if(lado>1 && lado<600)
 			this.lado = lado;
@@ -22,13 +22,13 @@ public class Cuadrado extends Figura
 			this.lado = 2;
 	}
 
-	int getLado()
+	public int getLado()
 	{
 		return lado;
 	}
 
 	@Override
-	void pintar(java.awt.Graphics g)
+	public void pintar(java.awt.Graphics g)
 	{
 		super.pintar(g);
 		if(relleno)

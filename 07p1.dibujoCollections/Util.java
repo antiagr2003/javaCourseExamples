@@ -5,7 +5,7 @@ public class Util
 		Detiene el programa el tiempo especificado
 		@param segundos número de segundos a esperar 
 	*/
-	static void wait(int segundos)
+	public static void wait(int segundos)
 	{
 		try
 		{
