@@ -24,7 +24,7 @@ dibujo.pintar("Grupo Rojo", new Circulo(100, 20, true, Color.RED, 200));
 
 ##### Diagrama de Secuencia del caso de uso "Pintar una Figura en un grupo"
 
-![alt text]https://github.com/DavidContrerasICAI/javaCourseExamples/blob/master/07p2.dibujoGrupos/_diagramaSecuencia.jpg)
+![alt text](https://github.com/DavidContrerasICAI/javaCourseExamples/blob/master/07p2.dibujoGrupos/_diagramaSecuencia.jpg)
 
 #### Salida del programa
 * AppDibujoGrupo: Crear 5 figuras que pertenezcan a 3 grupos diferentes. Haremos que las figuras de un grupo sean del mismo color, para comprender más fácilmente su ejecución. Así, los nombres de los grupos serán "Grupo Rojo", "Grupo Azul", etc.
