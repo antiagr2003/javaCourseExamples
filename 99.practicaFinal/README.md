@@ -1,15 +1,14 @@
-<style type="text/css">
-    ol { list-style-type: upper-alpha; }
-</style>
-
 ## Práctica Final. Programación Orientada a Objetos. 
 
 ### Desarrollo de un software "comercial" con interfaz gráfico 
 
 El alumno deberá implementar una aplicación Swing, puediendo elegir el tipo de práctica:
-1. Idea propia del alumno con el VºBº del profesor.
-2. JPaint evolucionado.
-3. Aplicación de gestión de un tipo de objeto.
+
+ A. Idea propia del alumno con el VºBº del profesor.
+ 
+ B. JPaint evolucionado.
+
+ C. Aplicación de gestión de un tipo de objeto.
 
 #### Fecha de entrega:
 
