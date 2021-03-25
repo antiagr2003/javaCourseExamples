@@ -10,6 +10,12 @@ public class AppRetoMetodos
         Persona p1 = new Persona();
         p1.setNombre("Luis").setEdad(22).setDireccion("Calle de la otra esquina, 34");
         System.out.println(p1);
+        
+        Persona p2 = new Persona();
+        p2.setNombre("Manué")
+          .setEdad(23)
+          .setDireccion("Calle de la manita relajá, 12");
+        System.out.println(p2);        
     } 
 }
 
