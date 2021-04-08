@@ -19,6 +19,8 @@ public class JVentanaTuneada extends JFrame implements ActionListener, KeyListen
 {
 
     private JTextField txtEdad;
+    private JButton btnGuardar;
+    private JButton btnLimpiar;
 
     public static void main(String args[])
     {
@@ -52,8 +54,10 @@ public class JVentanaTuneada extends JFrame implements ActionListener, KeyListen
         JPanel pnlSur = new JPanel();
         pnlSur.setLayout(new FlowLayout());
 
-        JButton btnGuardar = new JButton("Guardar");
+        btnGuardar = new JButton("Guardar");
+        btnLimpiar = new JButton("Limpiar");
         pnlSur.add(btnGuardar);
+        pnlSur.add(btnLimpiar);
 
         this.add(lblTitulo, BorderLayout.NORTH); //Si una zona del Layout solo tiene un componente, puede agregarse sin Panel
         this.add(pnlCentro, BorderLayout.CENTER);
@@ -64,6 +68,7 @@ public class JVentanaTuneada extends JFrame implements ActionListener, KeyListen
 
 
         btnGuardar.addActionListener(this);
+        btnLimpiar.addActionListener(this);
 
         txtNombre.addKeyListener(this);
 
@@ -81,7 +86,10 @@ public class JVentanaTuneada extends JFrame implements ActionListener, KeyListen
     public void actionPerformed(ActionEvent e)
     {
         char c = '\u2039';
-        System.out.println("HOLLLL");
+        if(e.getSource()==btnLimpiar)
+            System.out.println("Limpiar");
+        else if(e.getSource()==btnGuardar)
+            System.out.println("Guardar");
     }
 
     @Override
