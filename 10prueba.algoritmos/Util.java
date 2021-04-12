@@ -25,7 +25,7 @@ public class Util
     }
 
 
-    public static boolean tieneTodosNumConsecutivos(int[] b) 
+    public static boolean tieneTodosNumConsecutivos(int[] numerosAleatorios) 
     {
     /* Código a desarrollar
     *

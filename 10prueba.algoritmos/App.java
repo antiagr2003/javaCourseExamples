@@ -1,7 +1,8 @@
 import java.util.HashMap;
 import java.util.Map;
 
-class Main {
+public class App 
+{
     public static void main(String[] args)
     {
         //Encontrar todas las parejas que sumen 10
@@ -41,8 +42,8 @@ class Main {
         
         
         //Encontrar si un array está formado sólo por números consecutivos
-        int[] B = { -1, 5, 4, 2, 0, 3, 1 };
-        if (Util.tieneTodosNumConsecutivos(B))
+        int[] numerosAleatorios = { -1, 5, 4, 2, 0, 3, 1 };
+        if (Util.tieneTodosNumConsecutivos(numerosAleatorios))
             System.out.print("Tiene todos los elementos consecutivos");
         else
             System.out.print("No tiene todos los elementos consecutivos");
