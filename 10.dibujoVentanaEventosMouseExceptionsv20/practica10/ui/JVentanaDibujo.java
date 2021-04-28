@@ -91,7 +91,7 @@ public class JVentanaDibujo extends JFrame
 		pnlCentro.add(lienzo);
 
 		JPanel pnlSur = new JPanel(new GridLayout(1,3));
-		JLabel lblMensaje1 = new JLabel("JPaint 2018");
+		JLabel lblMensaje1 = new JLabel("JPaint");
 		JLabel lblMensaje2 = new JLabel("Programación Orientada a Objetos (ICAI)");
 		JLabel lblMensaje3 = new JLabel("por David Contreras");
 		pnlSur.add(lblMensaje1);
