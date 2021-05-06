@@ -1,19 +1,8 @@
 ## Práctica Final. Programación Orientada a Objetos. 
 
-### Desarrollo de un software "comercial" con interfaz gráfico 
-
-El alumno deberá implementar una aplicación Swing, puediendo elegir el tipo de práctica:
-
- A. Idea propia del alumno con el VºBº del profesor.
- 
- B. JPaint evolucionado.
-
- C. Aplicación de gestión de un tipo de objeto.
-
 #### Fecha de entrega:
 
-<span style="color:red;font-weight:bold">Aproximadamente sobre el 20 ó 22 de mayo, según la fecha del último examen que tengáis</span>
-
+<span style="color:red;font-weight:bold">30 de mayo</span>
 
 #### Entregable:
 
@@ -23,6 +12,17 @@ Un fichero ZIP que contenga:
 - Bin.zip: Un JAR del fichero de ejecución del proyecto con los ficheros y directorios complementarios necesarios.
 - Javadoc.zip: Un ZIP con la documentación de JAVADOC. Documentar 10 elementos (clase, atributos o métodos).
 - README.txt: Un fichero de texto llamado README.txt con los usuarios, contraseñas o palabras clave a utilizar en el programa. 
+
+### Desarrollo de un software "comercial" con interfaz gráfico 
+
+El alumno deberá implementar una aplicación Swing, puediendo elegir el tipo de práctica:
+
+ A. Idea propia del alumno con el VºBº del profesor.
+ 
+ B. JPaint evolucionado.
+
+ C. Aplicación de gestión de un tipo de objeto.
+ 
 
 #### Objetivos de la práctica tipo C:
 
