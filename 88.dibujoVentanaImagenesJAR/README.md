@@ -8,7 +8,7 @@ Es solo un ejemplo para aprender a gestionar imágenes con un objeto Graphics.
 
 #### Diseño 
 
-![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/12.dibujoVentanaFicherosTexto/output.jpg)
+![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/88.dibujoVentanaImagenesJAR/output.jpg)
 
 
 
