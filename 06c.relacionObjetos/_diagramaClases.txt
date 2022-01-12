@@ -1,6 +1,0 @@
-[Equipo|-nombre;-presupuesto]->17..22[Jugador|-nombre;-dorsal]
-[Equipo|-nombre;-presupuesto]->1[Presidente|-nombre;-profesion;]
-[Jugador|-nombre;-dorsal]->*[Estadistica|-jornada;-goles]
-
-
-http://yuml.me/diagram/scruffy/class/draw

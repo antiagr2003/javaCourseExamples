@@ -1,3 +1,0 @@
-[Usuario]-(Pintar figura en un grupo)
-[Usuario]-(Ocultar/Mostrar un grupo)
-[Usuario]-(Ocultar/Mostrar todas las figuras)

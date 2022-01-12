@@ -1,5 +1,0 @@
-[Personaje|vida;material]^-[PersonajePremium|skins]
-[Personaje|vida;material]^-[PersonajePromocion|fechaCaducidad;pavosExtras]
-
-
-Fuente: https://yuml.me/diagram/scruffy/class/draw
