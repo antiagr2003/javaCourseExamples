@@ -1,0 +1,19 @@
+def getNombre():
+	a = 3
+	return nombre
+
+if a = 4:
+	a = 3
+
+SI: getNombre()
+{
+	a = 3;
+	return nombre;
+}
+
+NO: getNombre()
+{
+a = 3;return nombre;
+}
+
+NO: getNombre(){a = 3;return nombre;}
