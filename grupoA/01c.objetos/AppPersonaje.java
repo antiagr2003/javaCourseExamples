@@ -10,6 +10,13 @@ public class AppPersonaje
 		p1.setVida(12); //Mensajes 
 		p1.disparar(p2);
 
+		/*
+		RETO 1
+		Inicializa los atributos de los objetos y comprueba el valor de los mismos
+		después de hacer variaciones con los métodos de su interfaz 
+		*/
+
+
 		/* 
 		Ejemplo de la mismas operaciones, 
 		pero con otro tipo de objeto:String 
