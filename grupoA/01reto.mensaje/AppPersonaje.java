@@ -7,7 +7,7 @@ public class AppPersonaje
 
 		Personaje p2 = new Personaje(); //Definición y creación del objeto
 
-		p1.setVida(12); //Mensajes 
+		p1.setVida(12); //Mensajes que se lanzan sobre el objeto
 		p1.disparar(p2);
 
 		/*
