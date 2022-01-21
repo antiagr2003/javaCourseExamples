@@ -1,10 +1,11 @@
 public class Personaje
 {
-	//atributos
+	//Atributos
 	String usuario;
 	int vida;
 	int madera;
 
+	//Constructores
 	Personaje(String usuario, int vida, int madera)
 	{
 		this.usuario = usuario;
@@ -27,7 +28,7 @@ public class Personaje
 	}	
 */
 
-	//métodos
+	//Métodos
 	String getUsuario()
 	{
 		return usuario;
@@ -65,7 +66,6 @@ public class Personaje
 	void addMadera(int masMadera)
 	{
 		madera += masMadera;
-		//madera = madera + masMadera;
 	}
 
 	void recibirDisparo(int unaVida)
@@ -80,12 +80,6 @@ public class Personaje
 
 	boolean isVivo()
 	{
-		/*
-		if(vida>0)
-			return true;
-		else
-			return false;
-*/
 		return (vida > 0);
 	}
 
