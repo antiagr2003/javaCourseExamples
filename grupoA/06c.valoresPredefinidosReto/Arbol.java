@@ -1,7 +1,5 @@
 public class Arbol
 {
-	public static final int MADERA_MIN = 0;
-
 	//atributos
 	int maderaTotal;
 	int maderaPorPico;
@@ -36,16 +34,16 @@ public class Arbol
 
 	int recibirPico()
 	{
-		int maderaRestada = MADERA_MIN;
+		int maderaRestada = 0;
 		
-		if((maderaTotal - maderaPorPico) >= MADERA_MIN)
+		if((maderaTotal - maderaPorPico) >= 0)
 		{
 			maderaTotal -= maderaPorPico;
 			maderaRestada = maderaPorPico;
 		}
 		else
 		{
-			maderaTotal = MADERA_MIN;
+			maderaTotal = 0;
 			maderaRestada = maderaTotal;
 		}
 
@@ -54,12 +52,12 @@ public class Arbol
 
 	boolean isVivo()
 	{
-		if(maderaTotal > MADERA_MIN)
+		if(maderaTotal>0)
 			return true;
 		else
 			return false;
 
-		//return (madera>MADERA_MIN);
+		//return (madera>0);
 	}
 
 	String getInfo()
