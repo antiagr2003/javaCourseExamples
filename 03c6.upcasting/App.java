@@ -33,7 +33,7 @@ public class App
 // ERROR:	System.out.println(p2.getSueldo());	
 		
 		Trabajador t4 = (Trabajador) p2; //DOWNCASTING	
-		System.out.println(p2.getSueldo());	
+		System.out.println(t4.getSueldo());	
 
 	}
 }
