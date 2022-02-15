@@ -9,5 +9,7 @@ Se pide realizar un par de programas de micro-benchmarking que generen los sigui
 ![Output del Benchmark](output.jpg)
 - Investigar cuál es el tiempo de ejecución del "operador +" vs "String Builder" de 0 a 10 iteraciones con incrementos de 1 y de 0 a 100 con incrementos de 10. Deberéis decidir cuál es el punto de inflexión a partir del cual debemos utilizar StringBuilder en lugar del operador +.
 
+Ver en retos: ![Reto Benchmark de Concatenacioones](../retos/06.reto.bechmarkingConcatenacion)
+
 
 
