@@ -5,7 +5,7 @@ Fusionar las prácticas 2 (pintar en un dibujo un cuadrado) y 3p1 (figuras en he
 
 A continuación, se muestra un diagrama de secuencia que ayudará a saber el flujo de programa de nuestro código:
 
-![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/03p2.dibujoHerencia/_diagramaSecuencia.png)
+![Diagrama de secuencia](_diagramaSecuencia.png)
 
 Como ya programamos en la práctica 3, cada figura podrá tener relleno o no y poseerán un color específico, además de tener una posición.
 
@@ -14,9 +14,9 @@ Se investigará en la API del JDK la forma de pintar rectángulos y círculos co
 ##### Salida del programa
 
 * AppDibujo01: Crear dos círculos rellenos, un cuadrado relleno y otro sin relleno.
-![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/03p2.dibujoHerencia/output1.jpg)
+![Salida de App01](output1.jpg)
 * AppDibujo02: Crear 10 cuadrados que se vayan pintando con un intervalo de 1 segundo desplazándose en forma diagonal (de arriba a la izquierda hacia abajo a la derecha).
-![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/03p2.dibujoHerencia/output2.jpg)
+![Salida de App02](output2.jpg)
 
 
 

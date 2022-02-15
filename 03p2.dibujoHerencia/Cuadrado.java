@@ -2,6 +2,8 @@ import java.awt.Color;
 
 public class Cuadrado extends Figura
 { 
+	public final static int LADO_MIN = 2; 
+	public final static int LADO_MAX = 600; 
 	int lado;
 
 	/** 
@@ -16,10 +18,10 @@ public class Cuadrado extends Figura
 
 	void setLado(int lado)
 	{
-		if(lado>1 && lado<600)
+		if(lado >= LADO_MIN && lado < LADO_MAX)
 			this.lado = lado;
 		else
-			this.lado = 2;
+			this.lado = LADO_MIN;
 	}
 
 	int getLado()

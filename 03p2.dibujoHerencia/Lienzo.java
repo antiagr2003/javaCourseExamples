@@ -9,10 +9,10 @@ public class Lienzo extends Canvas
 	void addFigura(Figura c)
 	{
 		for(int i=0;i<figuras.length;i++)
-			if(figuras[i]==null)
+			if(figuras[i] == null)
 			{
 				figuras[i] = c;
-				i=figuras.length;
+				i = figuras.length;
 			}
 	}
 
@@ -20,7 +20,7 @@ public class Lienzo extends Canvas
 	public void paint(Graphics g)
 	{
 		for(int i=0;i<figuras.length;i++)
-			if(figuras[i]!=null)
+			if(figuras[i] != null)
 				figuras[i].pintar(g);
 	}
 }
