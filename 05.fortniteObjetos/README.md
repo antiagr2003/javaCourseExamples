@@ -32,20 +32,20 @@ Ojo porque posiblemente haya que realizar algún cambio respecto al modelo en la
 - Realizar el diagrama de clases.
 - Realizar un diagram de paquetes.
 - Programar los siguientes casos de uso:
-1. Crear dos personajes y meterlos en un array: The Grefg y Ampeter.
-2. Crear dos árboles y dos casas (madera y ladrillo)
-3. The Grefg 1 picará un árbol y una casa.
-4. Ampeter picará otro árbol y la otra casa.
-5. Crear dos armas (Escopeta clásica con 5 balas y Subfusil clásico con 10 balas).
-6. The Grefg cogerá la escopeta y Ampeter el subfusil.
-7. The Grefg disparará a Ampeter.
-8. The Grefg disparará 3 veces al aire (no le dará).
-9. The Grefg 1 disparará a Ampeter nuevamente en dos ocasiones. En estos momentos el arma de The Grefg no tendrá municiones, habrá gastado todas sus balas. 
-10. The Grefg 1 disparará a Ampeter. al no tener balas no podrá hacerle daño.
-11. Comprobar la vida de Ampeter y mostrala por pantalla.
-12. Ampeter recogerá un botiquín que le dará incrementará 30 de vida.
-13. The Grefg recogerá munición para su escopeta con dos balas más. Esta escopeta de The Grefg tendrá 2 balas ahora.
-14. Mostrar toda la información de los dos personajes y comprobar que está todo correcto.
+        1. Crear dos personajes y meterlos en un array: The Grefg y Ampeter.
+        2. Crear dos árboles y dos casas (madera y ladrillo)
+        3. The Grefg 1 picará un árbol y una casa.
+        4. Ampeter picará otro árbol y la otra casa.
+        5. Crear dos armas (Escopeta clásica con 5 balas y Subfusil clásico con 10 balas).
+        6. The Grefg cogerá la escopeta y Ampeter el subfusil.
+        7. The Grefg disparará a Ampeter.
+        8. The Grefg disparará 3 veces al aire (no le dará).
+        9. The Grefg 1 disparará a Ampeter nuevamente en dos ocasiones. En estos momentos el arma de The Grefg no tendrá municiones, habrá gastado todas sus balas. 
+        10. The Grefg 1 disparará a Ampeter. al no tener balas no podrá hacerle daño.
+        11. Comprobar la vida de Ampeter y mostrala por pantalla.
+        12. Ampeter recogerá un botiquín que le dará incrementará 30 de vida.
+        13. The Grefg recogerá munición para su escopeta con dos balas más. Esta escopeta de The Grefg tendrá 2 balas ahora.
+        14. Mostrar toda la información de los dos personajes y comprobar que está todo correcto.
 
 
 ### Especificaciones técnicas
