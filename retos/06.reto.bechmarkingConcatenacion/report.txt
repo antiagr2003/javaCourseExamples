@@ -1,0 +1,67 @@
+Iteraciones: 10000000.
+Tiempo de ejecucion Operador +
+0, 0,0300 usec
+1, 0,0610 usec
+2, 0,0800 usec
+3, 0,0930 usec
+4, 0,1000 usec
+5, 0,1170 usec
+6, 0,1320 usec
+7, 0,1500 usec
+8, 0,1680 usec
+9, 0,1850 usec
+10, 0,2080 usec
+11, 0,3210 usec
+12, 0,3570 usec
+13, 0,3730 usec
+14, 0,4030 usec
+15, 0,4280 usec
+16, 0,4520 usec
+17, 0,4850 usec
+18, 0,5070 usec
+19, 0,5730 usec
+Tiempo de ejecucion StringBuilder
+0, 0,0340 usec
+1, 0,0700 usec
+2, 0,0830 usec
+3, 0,1010 usec
+4, 0,1070 usec
+5, 0,1210 usec
+6, 0,1360 usec
+7, 0,1530 usec
+8, 0,1730 usec
+9, 0,1840 usec
+10, 0,1970 usec
+11, 0,2200 usec
+12, 0,2250 usec
+13, 0,2420 usec
+14, 0,2750 usec
+15, 0,2970 usec
+16, 0,3070 usec
+17, 0,3460 usec
+18, 0,3560 usec
+19, 0,3520 usec
+
+Iteraciones: 10000000.
+Tiempo de ejecucion Operador +
+0, 0,0310 usec
+10, 0,2270 usec
+20, 0,5390 usec
+30, 0,8080 usec
+40, 1,1010 usec
+50, 1,4110 usec
+60, 1,7040 usec
+70, 2,0720 usec
+80, 2,4730 usec
+90, 2,7510 usec
+Tiempo de ejecucion StringBuilder
+0, 0,0320 usec
+10, 0,2100 usec
+20, 0,3640 usec
+30, 0,5590 usec
+40, 0,6970 usec
+50, 1,0080 usec
+60, 1,0860 usec
+70, 1,2070 usec
+80, 1,4110 usec
+90, 1,5920 usec
