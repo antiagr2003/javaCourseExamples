@@ -1,0 +1,7 @@
+[Personaje|usuario;vida;material]
+[Picable|recibirPico()]^-[Arbol|maderaTotal;maderaPorPico;]
+[Picable|recibirPico()]^-[Casa|cantidadMaterial]
+[Casa]->[Material|valor]
+
+
+https://yuml.me/diagram/scruffy/class/draw
