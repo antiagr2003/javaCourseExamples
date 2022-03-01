@@ -1,13 +1,13 @@
 ## Práctica 06p2. Becnhmarking. Operaciones básicas en ArrayList
 
+#### [Solución de la práctica](../retos/09reto.benchmarkingArrayList)
+
 #### Se pide: 
 Realizar un benchmarking que refleje el coste computacional (tiempo) que tienen las siguientes operaciones:
 - Agregar elementos al final del ArrayList: se agregarán de 1 a 100 objetos Strings con el valores de la posición donde se agregarán ("1", "2", etc.) sobre un ArrayList vacío. Se analizará el coste de agregar un elemento, dos, tres, etc. ¿Cuesta lo mismo agregar 1 elemento que 50? Método: **add(Object)**
 - Eliminar objetos del ArrayList: se eliminarán los elementos desde la posición 1 hasta la 100 sobre un ArrayList ya creado de 100 elementos, para ver el coste de eliminación en cada posición. ¿Cuesta lo mismo eliminar el elemento 1º que el 100º?. Método: **remove(int)**
 - Insertar objetos en un ArrayList: se insertán los elementos desde la posición 1 hasta la 100 sobre un ArrayList ya creado de 100 elementos, para ver el coste de inserción en cada posición. ¿Cuesta lo mismo insertar el elemento en la posición 1 que en la 100?.  Método: **add(int, Object)**
 - Obtener objetos del ArrayList: se devolverá los elementos desde la posición 1 hasta la 100 sobre un ArrayList ya creado de 100 elementos, para ver el coste de extracción del ArrayList en cada posición. ¿Cuesta lo mismo devolver el elemento en la posición 1 que en la 100?. Método: **get(int)**
-
-#### [Solución de la práctica](../retos/09reto.benchmarkingArrayList)
 
 #### Ayuda: 
 
