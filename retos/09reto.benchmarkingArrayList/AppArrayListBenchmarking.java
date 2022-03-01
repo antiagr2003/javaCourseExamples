@@ -39,7 +39,7 @@ public class AppArrayListBenchmarking
 		{
 			long tiempo1 = 0;
 			long tiempoMinimo = Long.MAX_VALUE;
-			for(int i=0;i<ITERACIONES;i++)	
+			for(int i=0;i<ITERACIONES+WARM_UP;i++)	
 			{
 				tiempo1 += AppArrayListBenchmarking.insertarObjeto(inserciones);
 				if(i == WARM_UP)
@@ -58,7 +58,7 @@ public class AppArrayListBenchmarking
 		{
 			long tiempo1 = 0;
 			long tiempoMinimo = Long.MAX_VALUE;
-			for(int i=0;i<ITERACIONES;i++)	
+			for(int i=0;i<ITERACIONES+WARM_UP;i++)	
 			{
 				tiempo1 += AppArrayListBenchmarking.eliminarObjeto(borrados);
 				if(i == WARM_UP)
@@ -77,7 +77,7 @@ public class AppArrayListBenchmarking
 		{
 			long tiempo1 = 0;
 			long tiempoMinimo = Long.MAX_VALUE;
-			for(int i=0;i<ITERACIONES;i++)	
+			for(int i=0;i<ITERACIONES+WARM_UP;i++)	
 			{
 				tiempo1 += AppArrayListBenchmarking.devolverObjeto(devuelto);
 				if(i == WARM_UP)
