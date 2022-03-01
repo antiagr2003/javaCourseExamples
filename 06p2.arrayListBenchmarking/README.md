@@ -7,6 +7,8 @@ Realizar un benchmarking que refleje el coste computacional (tiempo) que tienen 
 - Insertar objetos en un ArrayList: se insertán los elementos desde la posición 1 hasta la 100 sobre un ArrayList ya creado de 100 elementos, para ver el coste de inserción en cada posición. ¿Cuesta lo mismo insertar el elemento en la posición 1 que en la 100?.  Método: **add(int, Object)**
 - Obtener objetos del ArrayList: se devolverá los elementos desde la posición 1 hasta la 100 sobre un ArrayList ya creado de 100 elementos, para ver el coste de extracción del ArrayList en cada posición. ¿Cuesta lo mismo devolver el elemento en la posición 1 que en la 100?. Método: **get(int)**
 
+#### [Solución de la práctica](../retos/09reto.benchmarkingArrayList)
+
 #### Ayuda: 
 
 Una buena idea para hacer el benchmarking es generar una buena salida por pantalla para posteriormente copiarla a un Excel y generar una figura.
