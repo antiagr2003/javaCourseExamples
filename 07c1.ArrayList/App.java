@@ -21,7 +21,7 @@ public class App
 
         personas.remove(0);
         personas.remove(new Persona("33333A", "Jaime", 28));
-        p = (Persona) personas.get(2);
+        p = (Persona) personas.get(2);   
 
         Collection personasAsCollection = personas;     
         
@@ -38,9 +38,16 @@ public class App
 
 
         personasAsCollection.remove(0); //¿Por qué no da error? 
-        //Java hace Autoboxing de 0 a new Integer(0) e intentará borrar el objeto de la colección que devuelva true en equals con ese 0
+        //Java hace Autoboxing de 0 a Integer.valueOf(0) e intentará borrar el objeto de la colección que devuelva true en equals con ese 0
 
         personas.add("Hola");      
-        personas.add(new Integer(10));
+        personas.add(Integer.valueOf(10));
+
+        List<Persona> personasTipo = new ArrayList<Persona>();
+        personas.add(new Persona("11111A", "Luis", 22));
+        personas.add(new Persona("22222A", "Miguel", 33));
+        personas.add(new Persona("33333A", "Jaime", 28));
+
+        p = personasTipo.get(2);  //No hace falta Downcasting al estar tipificada la colleción.
     }    
 }
