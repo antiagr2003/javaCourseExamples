@@ -1,4 +1,3 @@
-
 public class App
 {
     public static void main(String[] args) 
@@ -19,7 +18,6 @@ public class App
         System.out.printf("\nITERATOR: %.4f", App.test(iterar));
         System.out.printf("\nCONTAINS: %.4f", App.test(contains));
     }
-
 
     public static float test(Operacion op)
     {

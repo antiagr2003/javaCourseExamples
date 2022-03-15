@@ -4,9 +4,6 @@ import java.util.List;
 
 public abstract class Operacion
 {
-    public static final int ARRAY_LIST = 1;
-    public static final int LINKED_LIST = 2;
-    
     public final static int SIZE = 100;
     
     protected List<String> lista;
