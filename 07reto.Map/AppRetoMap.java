@@ -61,20 +61,34 @@ public class AppRetoMap
         return lista;
     }   
 
+/*
     //Autoboxing implícitos.
     private static HashMap<Integer, Integer> creaHistogramaDinamico(Collection<Integer> numerosAleatorios)
     {
         HashMap<Integer, Integer> mapaNumeros = new HashMap<Integer, Integer>();
-        for(int numero:numerosAleatorios)
+        for(Integer numero:numerosAleatorios)
         {
             Integer valor = mapaNumeros.get(numero);
-            if(valor==null)
+            if(valor == null)
                 mapaNumeros.put(numero, 1);
             else
                 mapaNumeros.put(numero, valor+1);
         }
         return mapaNumeros;
+    }  */  
+
+    //Autoboxing implícitos.
+    private static HashMap<Integer, Integer> creaHistogramaDinamico(Collection<Integer> numerosAleatorios)
+    {
+        HashMap<Integer, Integer> mapaNumeros = new HashMap<Integer, Integer>();
+        for(Integer numero:numerosAleatorios)
+        {
+            int valor = mapaNumeros.getOrDefault(numero, 0);
+            mapaNumeros.put(numero, valor+1);
+        }
+        return mapaNumeros;
     }    
+
 
     //Autoboxing implícitos.
     private static HashMap<Persona, Integer> creaHistogramaDinamicoPersonas(Collection<Persona> personasAleatorias)
@@ -83,7 +97,7 @@ public class AppRetoMap
         for(Persona p:personasAleatorias)
         {
             Integer valor = mapaNumeros.get(p);
-            if(valor==null)
+            if(valor == null)
                 mapaNumeros.put(p, 1);
             else
                 mapaNumeros.put(p, valor+1);
