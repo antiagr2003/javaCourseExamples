@@ -46,9 +46,9 @@ public class Persona implements Comparable
     }
     
     @Override
-    public boolean equals(Object obj) //Upcasting, el objeto que recibe lo vemos como un Objeto
+    public boolean equals(Object obj)   //Upcasting, el objeto que recibe lo vemos como un Objeto
     {
-        if(obj instanceof Persona p) //Si la instancia del objeto es una Persona...
+        if(obj instanceof Persona p)    //Si la instancia del objeto es una Persona...
             return nif.equals(p.getNif());
         else
             return false;
@@ -63,10 +63,14 @@ public class Persona implements Comparable
     @Override
     public int compareTo(Object obj)
     {
+        int comparacion = +1;    //Cualquier objeto que no sea una Persona, mayor.
         if(obj instanceof Persona p) 
-            return nombre.compareTo(p.getNombre()); 
-        else
-            return +1;
+        {
+            comparacion = nombre.compareTo(p.getNombre());
+            if(comparacion == 0)
+                comparacion = -1;   //Por ejemplo, podría ser +1, pero nunca 0.
+        }
+        return comparacion;
     }
 
 }
