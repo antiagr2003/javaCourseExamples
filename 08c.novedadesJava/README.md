@@ -67,15 +67,14 @@ lista.add(4);
 
 
 ```Java
-for(Integer numero:lista)
-    System.out.println(numero);
+int suma = 0;
+for(int numero:lista) //Autoboxing
+    suma += numero;
+System.out.println(suma);
 ```
 
-    1
-    2
-    3
-    4
-    
+    10
+
 
 #### Creación de colecciones
 
@@ -94,7 +93,7 @@ lista
 
 
 
-    [1, 2, 3, 4, 5]
+    [1, 2, 3, 4]
 
 
 
