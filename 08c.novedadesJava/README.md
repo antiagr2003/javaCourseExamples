@@ -97,7 +97,7 @@ lista
 
 
 
-#### Argumentos variables (var args)
+## Argumentos variables (var args)
 
 Hasta ahora, la forma de recibir diferente número de argumentos era sobrecargando los métodos.
 
@@ -210,11 +210,17 @@ Util.sumar(1, 2, 3, 4);
 
 
 
-#### Records: creación de clases de forma rápida
+## Records: creación de clases de forma rápida
 
 Hemos visto la manera formal de creación de clases. En algunas ocasiones necesitaremos clases muy básicas, de funcionalidad reducida, que queramos crear de una forma rápida: **records**.
 
 Los records implementan los métodos _equals_ , _toString_ y _hashCode_.
+
+También implenta automáticamente los getters en formato record, es decir, con los nombres únicamente del propio atributo:
+
+```
+persona.nombre()
+```
 
 
 ```Java
@@ -237,6 +243,19 @@ personas
 
 
     [Persona[nombre=Luis, edad=22], Persona[nombre=Pepe, edad=10], Persona[nombre=Juan, edad=8]]
+
+
+
+
+```Java
+Persona persona = personas.get(0);
+persona.nombre()
+```
+
+
+
+
+    Luis
 
 
 
@@ -279,6 +298,130 @@ Util.sumar(new Persona("Luis", 22),
 
     40
 
+
+
+
+```Java
+personas.stream()
+        .mapToInt(x -> x.getEdad())
+        .reduce(0, Integer::sum);
+```
+
+
+
+
+    40
+
+
+
+## No tipificación de los objetos
+
+Siguiendo la tendencia de muchos lenguajes de programación que no realizan una inferencia de tipos (Python) o que suprimen el tipo de la definición de variables, en Java se da la posibilidad de eliminar el tipo de la definición para simplificar el código. 
+
+Para evitar los problemas derivados de la inferencia de tipos, Java solo permite definir variables así en el momento de creación del objeto, es decir, no permite definir solo variables sin tipo ni declararlas como parámetros (que sería lo mismo).
+
+
+```Java
+var nombre = "Hola";
+nombre.toUpperCase();
+```
+
+
+
+
+    HOLA
+
+
+
+
+```Java
+var i = 5;
+i
+```
+
+
+
+
+    5
+
+
+
+
+```Java
+var lista = new ArrayList<Integer>();
+lista.add(1);
+lista.add(2);
+lista.add(3);
+
+lista.get(1);
+```
+
+
+
+
+    2
+
+
+
+
+```Java
+lista.getClass()
+```
+
+
+
+
+    class java.util.ArrayList
+
+
+
+### Restricciones en el uso de _var_
+
+No se permiten declarar objetos no tipificados cuando van acoompañados de la creación del objeto, es decir, no se puede inferir en tiempo de compilación. Este hecho hace la compilación segura. 
+
+Este hecho no ocurre en Python, por ejemplo.
+
+
+```Java
+var lista;
+lista = new ArrayList<Integer>();
+```
+
+
+    |   var lista;
+
+    cannot infer type for local variable lista
+
+      (cannot use 'var' on variable without initializer)
+
+    
+
+
+
+```Java
+class Clase
+{
+    var atributo;
+
+    void metodo(var a)
+    {
+        a = 4;
+    }
+}
+```
+
+
+    |       var atributo;
+
+    'var' is not allowed here
+
+    
+
+    |       void metodo(var a)
+
+    'var' is not allowed here
+
+    
 
 
 ## Programación Imperativa
