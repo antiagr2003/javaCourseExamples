@@ -2,6 +2,12 @@ import java.awt.Color;
 
 public abstract class Figura
 {
+
+	public final static int X_MIN = 0; 
+	public final static int X_MAX = 800; 
+	public final static int Y_MIN = 0; 
+	public final static int Y_MAX = 600; 
+		
 	protected int x;
 	protected int y;
 	protected boolean relleno;
@@ -35,13 +41,13 @@ public abstract class Figura
 
 	public void setX(int x)
 	{
-		if(x>0 && x<800)
+		if(x > X_MIN && x < X_MAX)
 			this.x = x;
 	}
 
 	public void setY(int y)
 	{
-		if(y>0 && y<600)
+		if(y > Y_MIN && y < Y_MAX)
 			this.y = y;
 	}
 

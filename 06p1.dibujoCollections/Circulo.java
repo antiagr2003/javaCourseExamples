@@ -2,6 +2,9 @@ import java.awt.Color;
 
 public class Circulo extends Figura
 {
+	public final static int RADIO_MIN = 2; 
+	public final static int RADIO_MAX = 600; 
+	
 	private int radio;
 
 	/** 
@@ -18,10 +21,10 @@ public class Circulo extends Figura
 
 	public void setRadio(int radio)
 	{
-		if(radio>1 && radio<600)
+		if(radio >= RADIO_MIN && radio < RADIO_MAX)
 			this.radio = radio;
 		else
-			this.radio = 2;
+			this.radio = RADIO_MIN;
 	}
 
 	public int getRadio()
