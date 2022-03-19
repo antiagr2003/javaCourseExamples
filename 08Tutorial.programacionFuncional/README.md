@@ -58,6 +58,28 @@ Cuando una función recibe otras funciones como parámetro, se la denomina de **
 
 Muchos lenguajes nos proveen con una serie de funciones de orden superior para trabajar con estructuras de datos. De entre ellas, las más conocidas son map y reduce: la primera aplica la misma función sobre cada elemento de una colección, y la segunda acumula los elementos en un único valor según una función dada. Veamos un ejemplo:
 
+### Recordando conceptos... 🥸
+
+Hay que recordar como se trabajaba con métodos tipo Builder, aquellos que devuelven el mismo tipo en los que están declarados. Por ejemplo, como ocurría con la clase StringBuilder y sus métodos append.
+
+Muchos métodos de la clase **Stream** devolverán nuevos Stream.
+
+
+```Java
+StringBuilder sb = new StringBuilder();
+sb.append("A")
+    .append("B")
+    .append("C");
+sb
+```
+
+
+
+
+    ABC
+
+
+
 ## Expresiones Lambdas y API Stream
 
 Las **expresiones lambdas** son métodos/funciones sin nombre que pueden ser pasadas como argumentos de un método.
@@ -72,7 +94,7 @@ objeto.metodo((args) -> {cuerpo})
 
 Las expresiones lambdas se pueden aplicar a varios contextos Java: funcionalidades sobre streams (Predicate, Consumer, Function, ...), Single Abstract Methods (SAM), Functional Interfaces, etc.
 
-El **API Stream** permite generar una secuencia de elementos sobre los datos para tratarlos de forma funcional, permitiendo ejecutar métodos que pueden recibir como argumentos expresiones lambdas. Las operaciones realizadas sobre los streams generan nuevos streams y no modifican el original.
+👀 El **API Stream** permite generar una secuencia de elementos sobre los datos para tratarlos de forma funcional, permitiendo ejecutar métodos que pueden recibir como argumentos expresiones lambdas. Las operaciones realizadas sobre los streams generan nuevos streams y no modifican el original.
 
 #### Ejemplo #1 de programación procedural (imperativa)
 
@@ -203,9 +225,11 @@ numeros.stream()
 
     6 8 10 12 
 
-### Referencias a métodos como expresión lambda
+### Referencias a métodos como expresión lambda 👏
 
-Existe una forma de generar automáticamente la expresión lambda y es mediante la expresión ::.
+Como se puede ver, en el momento que añadimos código o encapsulamos la funcionalidad de las lambdas, la programación funcional pierde su esencia ya que llegamos a mezclar los paradigmas imperativo y declarativo.
+
+Existe una forma de generar automáticamente la expresión lambda y es mediante la expresión **::** y las **referencias a métodos**.
 
 En este caso se puede omitir tanto el argumento de la expresión lambda, como el que se pasará al método invocado.
 
@@ -230,7 +254,19 @@ numeros.stream()
 
     6 8 10 12 
 
-Otro ejemplo de utilización de :: para la generación de expresiones lambdas e invocación a métodos de instancia, en este caso de la clase String.
+#### Ejemplos de referencias a métodos
+
+
+```Java
+List<String> palabras = List.of("hola", "adiós");
+palabras.stream()
+    .map(x -> x.toUpperCase())
+    .forEach(x -> System.out.println(x));
+```
+
+    HOLA
+    ADIÓS
+    
 
 
 ```Java
@@ -240,9 +276,41 @@ palabras.stream()
     .forEach(System.out::println);
 ```
 
-    HOLA
-    ADIÓS
-    
+Más ejemplos...
+
+
+```Java
+List<Integer> lista = List.of(1,2,3,4);
+
+lista.stream()
+    .filter(x -> x < 3)            //Devuelve un stream
+    .map(x -> x * 2)               //Devuelve un stream    
+    .reduce(0, (x, y)  -> x + y); //Devuelve un número
+```
+
+
+
+
+    6
+
+
+
+
+```Java
+List<Integer> lista = List.of(1,2,3,4);
+
+lista.stream()
+    .filter(x -> x < 3)            //Devuelve un stream
+    .map(x -> x * 2)               //Devuelve un stream    
+    .reduce(0, Integer::sum);
+```
+
+
+
+
+    6
+
+
 
 ## Programación funcional con Collections
 
@@ -254,66 +322,7 @@ Nuevos métodos para trabajar con lambdas en las Collections:
 - forEach(lambda)
 - removeIf(lambda)
 
-#### Versión procedural
-
-Ojo, porque en este caso se convierte a un ArrayList y no se deja como una List, ya que la lista generada por List.of es inmutable y no se pueden eliminar elementos.
-
-
-```Java
-ArrayList<String> listaNombres = new ArrayList<>(List.of("Luis", "Javier", "Ana", "Marta", "Jaime"));
-Iterator<String> it = listaNombres.iterator();
-while(it.hasNext())
-{
-    String nombre = it.next();
-    if(nombre.length()==3)
-        it.remove();
-}
-
-listaNombres
-```
-
-
-
-
-    [Luis, Javier, Marta, Jaime]
-
-
-
-#### Versión funcional
-
-
-```Java
-ArrayList<String> listaNombres = new ArrayList<>(List.of("Luis", "Javier", "Ana", "Marta", "Jaime"));
-listaNombres.removeIf(nombre -> nombre.length() == 3);
-listaNombres
-```
-
-
-
-
-    [Luis, Javier, Marta, Jaime]
-
-
-
-Si se hubiese implementado esta solución con Streams, se podría haber realizado con List inmutables, ya que las operaciones con streams siempre generan copias y no actúan sobre los datos originales.
-
-
-```Java
-List<String> listaNombres = List.of("Luis", "Javier", "Ana", "Marta", "Jaime");
-listaNombres = listaNombres.stream()
-        .filter(nombre -> nombre.length() != 3)
-        .toList();
-listaNombres
-```
-
-
-
-
-    [Luis, Javier, Marta, Jaime]
-
-
-
-### Cambio de enfoque
+### Método forEach()
 
 Como se puede ver con el ejemplo anterior, el código funcional resulta más elegante. Otras, sin embargo, dependerán del caso de uso en cuestión o de interpretaciones más subjetivas.
 
@@ -351,6 +360,179 @@ listaNombres.forEach(System.out::println);
     Marta
     Jaime
     
+
+### Método removeIf()
+
+#### Versión procedural
+Ojo, porque en este caso se convierte a un ArrayList y no se deja como una List, ya que la lista generada por List.of es inmutable y no se pueden eliminar elementos.
+
+
+```Java
+ArrayList<String> listaNombres = new ArrayList<>(List.of("Luis", "Javier", "Ana", "Marta", "Jaime"));
+Iterator<String> it = listaNombres.iterator();
+while(it.hasNext())
+{
+    String nombre = it.next();
+    if(nombre.length()==3)
+        it.remove();
+}
+
+listaNombres
+```
+
+
+
+
+    [Luis, Javier, Marta, Jaime]
+
+
+
+#### Versión funcional 👏
+
+
+```Java
+ArrayList<String> listaNombres = new ArrayList<>(List.of("Luis", "Javier", "Ana", "Marta", "Jaime"));
+listaNombres.removeIf(nombre -> nombre.length() == 3);
+listaNombres
+```
+
+
+
+
+    [Luis, Javier, Marta, Jaime]
+
+
+
+Si se hubiese implementado esta solución con Streams, se podría haber realizado con List inmutables, ya que las operaciones con streams siempre generan copias y no actúan sobre los datos originales.
+
+
+```Java
+List<String> listaNombres = List.of("Luis", "Javier", "Ana", "Marta", "Jaime");
+listaNombres = listaNombres.stream()
+        .filter(nombre -> nombre.length() != 3)
+        .toList();
+listaNombres
+```
+
+
+
+
+    [Luis, Javier, Marta, Jaime]
+
+
+
+## Programación funcional con Mapas
+
+
+```Java
+Map<String, Integer> mapa = new HashMap<>();
+mapa.put("Ana", 19);
+mapa.put("Luis", 20);
+mapa.put("Jaime", 21);
+mapa.put("Marta", 22);
+```
+
+#### Versión procedural 
+
+
+```Java
+for(Map.Entry<String, Integer> entry:mapa.entrySet())
+     System.out.println(entry.getKey() + " " + entry.getValue());
+```
+
+    Marta 22
+    Ana 19
+    Luis 20
+    Jaime 21
+    
+
+#### Versión funcional 👏
+
+
+```Java
+mapa.forEach((k, v) -> System.out.println(k + " " + v));
+```
+
+    Marta 22
+    Ana 19
+    Luis 20
+    Jaime 21
+    
+
+
+```Java
+mapa.keySet()
+    .forEach(System.out::println);
+```
+
+    Marta
+    Ana
+    Luis
+    Jaime
+    
+
+### Mapas con Collections como valores 
+
+
+```Java
+HashMap<String, List<Integer>> campeonatos = new HashMap<>();
+campeonatos.put("Madrid", List.of(1, 1, 1));
+campeonatos.put("Barça", List.of(2, 2, 2));
+campeonatos.put("Atlético", List.of(3, 3, 3));
+```
+
+
+```Java
+campeonatos.values()
+    .stream()
+    .forEach(System.out::println);
+```
+
+    [2, 2, 2]
+    [3, 3, 3]
+    [1, 1, 1]
+    
+
+
+```Java
+campeonatos.values()
+    .stream()
+    .flatMap(Collection::stream)
+    .reduce(0, Integer::sum);
+```
+
+
+
+
+    18
+
+
+
+## Arrays como Streams
+
+
+```Java
+String[] miArray = {"Hola", "como", "estás"};
+Arrays.stream(miArray).forEach(System.out::println);
+```
+
+## Programación funcional con Switch
+
+Las expresiones lambdas se están extendiendo a otras estructuras clásicas del lenguaje. 
+
+
+```Java
+String s = "ADIOS";
+
+switch(s)
+{
+    case "HOLA" -> System.out.println("HELLO");
+    case "ADIOS" -> System.out.println("BYE");
+};
+```
+
+    BYE
+
 
 ## Programación funcional con Interfaces tipos SAM (Interfaces Funcionales)
 
@@ -493,7 +675,7 @@ public interface Pintable
 
 
 ```Java
-public class PintarSpanyol implements Pintable
+public class PintarEspanyol implements Pintable
 {
     public Object pintar()
     {
@@ -520,7 +702,7 @@ public class PintarHexadecimal implements Pintable
 
 
 ```Java
-Pintable strPintable = new PintarSpanyol();
+Pintable strPintable = new PintarEspanyol();
 Pintable colorPintable = new PintarColor();
 Pintable hexPintable = new PintarHexadecimal();
 
@@ -545,6 +727,8 @@ public interface Pintable
     public Object pintar();
 }
 ```
+
+Al ser interfaces funcionales, se pueden resolver como una lambda:
 
 
 ```Java
@@ -592,11 +776,3 @@ lista.stream().filter(x -> x.length() > 2).map(x -> x.toUpperCase()).toList()
     [ABC, ABCD]
 
 
-
-## Arrays como Streams
-
-
-```Java
-String[] miArray = {"Hola", "como", "estás"};
-Arrays.stream(miArray).forEach(System.out::println);
-```
