@@ -424,38 +424,44 @@ class Clase
     
 
 
-## Programación Imperativa
+## Métodos default en interfaces
+
+Java permite la posibilidad de implementar métodos por defecto en los interfaces para que sean la implementación por defecto en caso de omisión.
+
+De esta forma, se puede generalizar un comportamiento común a nivel de interfaces.
 
 
 ```Java
-List<Integer> lista = List.of(1,2,3,4);
+public interface Pintable
+{
+    default String pintar()
+    {
+        return "Pintando";
+    }
+}
+
+public class Lapicero implements Pintable
+{
+    public String pintar()
+    {
+        return "Pintando como un lapiz";
+    }
+}
+
+public class Boligafo implements Pintable
+{
+
+}
+
+Pintable lapiz = new Lapicero();
+Pintable boli = new Boligafo();
+
+System.out.println(lapiz.pintar());
+System.out.println(boli.pintar());
 ```
 
-
-```Java
-for(int i:lista)
-    if(i < 3)
-        System.out.println(i*2);
-```
-
-    2
-    4
-    
-
-## Programación Declarativa
-
-Mas adelante profundizaremos sobre esta forma de programación.
-
-
-```Java
-lista.stream()
-     .filter(x -> x<3)
-     .map(x -> x*2)
-     .forEach(x -> System.out.println(x));
-```
-
-    2
-    4
+    Pintando como un lapiz
+    Pintando
     
 
 
