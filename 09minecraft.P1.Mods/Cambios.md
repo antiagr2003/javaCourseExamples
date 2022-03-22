@@ -1,6 +1,12 @@
+# Práctica 1. Creación del Mod y Mappings
+## Modificaciones a realizar en ficheros
+
+#### Cambio 1
+
 ```gradle
 maven { url = 'https://maven.parchmentmc.org' }
 ```
+
 ```gradle
 repositories {
     // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
@@ -9,6 +15,7 @@ repositories {
     mavenCentral()
 }
 ```
+#### Cambio 2
 
 ```gradle
 classpath 'org.parchmentmc:librarian:1.+'
@@ -21,6 +28,8 @@ dependencies {
 }
 ```
 
+#### Cambio 3
+
 ```gradle
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 ```
@@ -32,6 +41,8 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 ```
+
+#### Cambio 4
 
 ```gradle
 version = '1.0'
