@@ -1,4 +1,4 @@
-## Práctica 08. POO avanzado. Dibujo de diferentes tipos de figura. 
+## Práctica 07. POO avanzado. Dibujo de diferentes tipos de figura. 
 ### Desarrollo de una aplicación gráfica que dibuje varios tipos de figuras agrupadas, para poder ocultar y mostrar los grupos de forma automática.
 
 Modificar la práctica de Dibujo para que agrupe distintas figuras. El grupo permitirá trabajar con un conjunto de figuras para realizar acciones conjuntas del tipo: mostrar figuras y ocultar figuras del grupo.
