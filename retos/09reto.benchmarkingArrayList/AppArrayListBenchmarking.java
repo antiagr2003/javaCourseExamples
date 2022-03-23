@@ -95,10 +95,11 @@ public class AppArrayListBenchmarking
 	{
 		//ArrayList lista = new ArrayList();
 		LinkedList lista = new LinkedList();
+		
 		long inicioNano = System.nanoTime();
 		for(int i=0;i<agregaciones;i++)
 		{
-			String objetoAInsertar = String.valueOf(i);
+			String objetoAInsertar = String.valueOf(1);
 			lista.add(objetoAInsertar);
 		}
 		long finNano = System.nanoTime();   
@@ -111,7 +112,7 @@ public class AppArrayListBenchmarking
 		//ArrayList lista = new ArrayList(SIZE+1);  //Para que no haya que aumentar la capacity
 		LinkedList lista = new LinkedList();
 		for(int i=0;i<SIZE;i++)
-			lista.add(String.valueOf(i));
+			lista.add(String.valueOf(1));
 
 		long inicioNano = System.nanoTime();
 		String objetoAInsertar = String.valueOf(posicion);
