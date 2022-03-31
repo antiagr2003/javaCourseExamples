@@ -4,6 +4,8 @@
 # Other resources
 *.pptx
 *.ppt
+*.doc
+*.docx
 
 # Compiled class file
 *.class
@@ -16,6 +18,11 @@
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
+
+
+# IntelliJ files
+.idea/
+*.iml
 
 # Temporal folders
 .ipynb_checkpoints/
