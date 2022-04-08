@@ -1,0 +1,5 @@
+{
+  "variants": {
+        "": { "model":  "mod_icai:block/comillas_block"}
+  }
+}
