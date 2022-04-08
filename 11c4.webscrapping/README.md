@@ -12,6 +12,8 @@ java -cp .;jsoup-1.13.1.jar AppNoticiasMarca
 
 ### Automatización de compilación, dependencias y empaquetado de aplicaciones (avanzado)
 
+Descarga de MAVEN: https://maven.apache.org/download.cgi
+
 Fichero pom.xml de configuración:
 
 ```xml
