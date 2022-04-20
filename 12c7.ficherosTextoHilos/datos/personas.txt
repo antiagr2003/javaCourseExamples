@@ -1,0 +1,3 @@
+Nombre: Luis Edad: 22 NIF: 11111A
+Nombre: Ana Edad: 19 NIF: 222222A
+Nombre: Jaime Edad: 21 NIF: 33333A
