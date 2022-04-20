@@ -12,5 +12,8 @@ public class App
         persona = new Persona("Javier", 23);
         personaJSON = gson.toJson(persona);
         System.out.println(personaJSON);
+
+        //Pausa para parar la ejecución. Pulsar ENTER para continuar.
+        new java.util.Scanner(System.in).next();
     }
 } 

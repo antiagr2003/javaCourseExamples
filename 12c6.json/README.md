@@ -52,7 +52,7 @@ Fichero pom.xml de configuración:
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
-            <version>2.8.3</version>
+            <version>2.8.2</version>
         </dependency>
     </dependencies>
 </project>
