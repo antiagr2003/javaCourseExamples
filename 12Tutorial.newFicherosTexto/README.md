@@ -66,12 +66,9 @@ contenido.forEach(System.out::println);
 
 ```Java
 BufferedReader reader = Files.newBufferedReader(path);
-String linea = reader.readLine();
-while(linea != null)
-{
+String linea;
+while((linea = reader.readLine()) != null)
     System.out.println(linea);
-    linea = reader.readLine();
-}
 ```
 
     1
