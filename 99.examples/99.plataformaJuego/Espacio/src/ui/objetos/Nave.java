@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Nave extends Sprite implements Controlable, Movible
 {
-    private static final String NOMBRE_IMAGEN = "resources/nave.png";
+    private static final String NOMBRE_IMAGEN = "nave.png";
     /** Para que se vea la salida del misil justo en la punta de la nave */
     private final int offset_y = -12;
     private int dx;

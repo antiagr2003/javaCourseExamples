@@ -27,13 +27,13 @@ public class Sprite
         int x = Integer.parseInt(elementos[1]);
         int  y = Integer.parseInt(elementos[2]);
         String ficheroImagen = elementos[3];
-        Sprite sprite = new Sprite(x, y, Juego.DIR_RESOURCES + ficheroImagen);
+        Sprite sprite = new Sprite(x, y, ficheroImagen);
         return sprite;
     }
 
     private void loadImage(String ficheroImagen)
     {
-        imagen = new ImageIcon(ficheroImagen).getImage();
+        imagen = new ImageIcon(Juego.DIR_RESOURCES + ficheroImagen).getImage();
         ancho = imagen.getWidth(null);
         alto = imagen.getHeight(null);
     }    

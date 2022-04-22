@@ -5,7 +5,7 @@ import ui.interfaces.Movible;
 
 public class Misil extends Sprite implements Movible
 {
-    private static final String NOMBRE_IMAGEN = "resources/misil.png";
+    private static final String NOMBRE_IMAGEN = "misil.png";
     private final int VELOCIDAD = 2;
 
     public Misil(int x, int y)

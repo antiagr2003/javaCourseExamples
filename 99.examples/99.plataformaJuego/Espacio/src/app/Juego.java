@@ -15,7 +15,7 @@ public class Juego extends JFrame
     {
         this.add(new Tablero());
 
-        this.setTitle("app.Juego del Espacio");
+        this.setTitle("Juego del Espacio");
         this.setSize(ANCHO, ALTO);
 
         this. setLocationRelativeTo(null);
