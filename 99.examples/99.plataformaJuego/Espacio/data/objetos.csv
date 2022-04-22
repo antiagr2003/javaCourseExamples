@@ -1,0 +1,4 @@
+sprite, 100, 100, asteroide.png
+sprite, 300, 300, asteroide.png
+sprite, 500, 200, asteroide.png
+nave, 40, 180
