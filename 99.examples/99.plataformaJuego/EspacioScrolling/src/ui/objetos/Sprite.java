@@ -3,6 +3,7 @@ package ui.objetos;
 import app.Juego;
 
 import java.awt.*;
+import java.util.Arrays;;
 import javax.swing.ImageIcon;
 
 public class Sprite
@@ -42,6 +43,9 @@ public class Sprite
 
     private void loadImage(String ficheroImagen)
     {
+        java.io.File file = new java.io.File(Juego.DIR_RESOURCES + ficheroImagen);
+        if(!file.exists())
+            System.out.println("No se encontró el fichero: " + file);
         imagen = new ImageIcon(Juego.DIR_RESOURCES + ficheroImagen).getImage();
         ancho = imagen.getWidth(null);
         alto = imagen.getHeight(null);
