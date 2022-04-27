@@ -34,3 +34,6 @@ _backup/
 *.ear
 *.tar.gz
 *.rar
+
+#Maven
+target/
