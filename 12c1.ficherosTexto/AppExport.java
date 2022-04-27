@@ -14,17 +14,19 @@ public class AppExport
     public static void main(String args[]) 
     {
         Collection<Persona> personas = AppExport.leerPersonas();
+        System.out.println(personas);
         AppExport.exportTexto(personas);
+        System.out.println("Fichero exportado");
     }
 
     public static void exportTexto(Collection<Persona> personas) 
     {
         try
         {
-            FileWriter fw = new FileWriter("datos/personas.txt");
+            FileWriter fw = new FileWriter("datos/personas.csv");
             PrintWriter pw = new PrintWriter(fw);
             for(Persona p:personas)
-                pw.println(p);
+                pw.println(p.toCSV());
             pw.close();
         }
         catch(IOException ioe)

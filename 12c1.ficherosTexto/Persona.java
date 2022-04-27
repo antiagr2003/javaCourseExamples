@@ -1,6 +1,8 @@
 /** @author David Contreras */
 public class Persona implements java.io.Serializable
 {
+    private static final long serialVersionUID = 2157119828902552395L;
+
     public final static int EDAD_MAXIMA = 120;
     public final static int EDAD_MINIMA = 0;
 
@@ -56,6 +58,17 @@ public class Persona implements java.io.Serializable
     {
         if(edad > EDAD_MINIMA && edad < EDAD_MAXIMA)
             this.edad = edad;       
+    }
+
+    public String toCSV()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.append(nombre)
+          .append(", ")
+          .append(edad)
+          .append(" , ")
+          .append(nif);
+        return sb.toString();
     }
 
     @Override
