@@ -17,10 +17,10 @@ import java.util.List;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-public class Tablero extends JPanel
+public class Tablero extends JPanel implements Runnable
 {
     private static final int FPS = 60;
-    private static final int DELAY = 1/FPS * 1000;      //En milisegundos
+    private static final int DELAY = (int) (1/(FPS*1.)*1000);      //En milisegundos
 
     //Elementos del juego
     private LinkedList<Sprite> objetosJuego;
@@ -51,6 +51,7 @@ public class Tablero extends JPanel
             }
         });
 
+        /*
         Timer timerObjetos = new Timer(DELAY, (e) ->
         {
             objetosJuego.forEach(objeto ->
@@ -62,7 +63,28 @@ public class Tablero extends JPanel
         });
 
         timerObjetos.start();
-    }
+        */
+        Thread hilo = new Thread(this);
+        hilo.start();
+     }
+
+     @Override
+     public void run()
+     {
+         while(true) {
+             try {
+                 Thread.sleep(DELAY);
+                 objetosJuego.forEach(objeto ->
+                 {
+                     objeto.mover();
+                     nave.checkImpacto(objeto);
+                 });
+                 this.repaint();
+             } catch (InterruptedException e) {
+                 e.printStackTrace();
+             }
+         }
+     }
 
     @Override
     public void paintComponent(Graphics g)

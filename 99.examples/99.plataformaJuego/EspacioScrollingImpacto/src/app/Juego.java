@@ -27,9 +27,13 @@ public class Juego extends JFrame
     public static void main(String[] args)
     {
         //Se suele poner en aplicaciones "serias" para sincronizar el inicio de la aplicación
-        EventQueue.invokeLater(() -> {
+        /*EventQueue.invokeLater(() -> {
             Juego ex = new Juego();
             ex.setVisible(true);
-        });
+        });*/
+
+        //Simplificación del código anterior:
+        Juego ex = new Juego();
+        ex.setVisible(true);
     }
 }
