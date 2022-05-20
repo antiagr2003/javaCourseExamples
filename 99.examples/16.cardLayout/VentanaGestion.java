@@ -6,7 +6,7 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.BoxLayout;
+import javax.swing.*;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -18,16 +18,12 @@ import javax.swing.JComponent;
 
 public class VentanaGestion extends JFrame
 {
-	JButton btnGestion;
-	JButton btnInforme;
-	
 	JTextField txtNombre;
 	JTextField txtApellidos;
 	JTextField txtDireccion;
 	
 	JTextArea txtInforme;
 	JPanel pnlCentro;
-	
 	
 	public static void main(String[] args) 
 	{
@@ -36,16 +32,6 @@ public class VentanaGestion extends JFrame
 	
 	public VentanaGestion()
 	{
-		Container c = this.getContentPane();
-		
-		JPanel pnlNorte = new JPanel(new FlowLayout()); 
-		btnGestion = new JButton("Gestion");
-		btnInforme  = new JButton("Informe");
-		pnlNorte.add(btnGestion);
-		pnlNorte.add(btnInforme);
-		
-		pnlCentro = new JPanel(new CardLayout());
-		
 		JPanel pnlGestion = new JPanel(new BorderLayout()); 
 		
 		JPanel pnlGestion1 = new JPanel();
@@ -87,42 +73,26 @@ public class VentanaGestion extends JFrame
 		JScrollPane sp = new JScrollPane (txtInforme );
 		pnlInforme.add(new JLabel("Informe de Objetos"), BorderLayout.NORTH);
 		pnlInforme.add(sp, BorderLayout.CENTER);
-		
-		pnlCentro.add(pnlGestion, "GESTION");
-		pnlCentro.add(pnlInforme, "INFORME");
-	
-		c.setLayout(new BorderLayout());
-		c.add(pnlNorte, BorderLayout.NORTH);
-		c.add(pnlCentro, BorderLayout.CENTER);
 
+		this.setLayout(new CardLayout());
 
-		btnGestion.addActionListener(new ActionListener()
-			{
-				public void actionPerformed(ActionEvent e)
-				{
-					mostrarPanel("GESTION");
-				}
-			});
-			
-		btnInforme.addActionListener(new ActionListener()
-			{
-				public void actionPerformed(ActionEvent e)
-				{
-					mostrarPanel("INFORME");
-				}
+		this.add(pnlGestion, "Gestion");
+		this.add(pnlInforme, "Informe");
+
+		Timer t = new Timer(2000, e -> {
+				System.out.println("qqq");
+				Container c = this.getContentPane();
+				CardLayout cl = (CardLayout) c.getLayout();
+				cl.show(c, "Informe"); 
 			});
 
+		t.setRepeats(false);
+		t.start();
 
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		this.pack();
+		this.setSize(400, 400);
 		this.setTitle("Gestión de Personas");
 		this.setResizable(false);
 		this.setVisible(true);
-	}
-
-	private void mostrarPanel(String panel) 
-	{
-		CardLayout cl = (CardLayout) pnlCentro.getLayout();
-		cl.show(pnlCentro , panel); 
 	}
 }
