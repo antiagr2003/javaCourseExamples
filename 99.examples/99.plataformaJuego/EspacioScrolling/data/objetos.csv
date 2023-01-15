@@ -1,6 +1,0 @@
-sprite, 500, 40, 0.05, planet1.png
-sprite, 370, 10, 0.10, planet2.png
-sprite, 100, 100, 0.5, asteroide.png
-sprite, 300, 300, 0.5, asteroide.png
-sprite, 500, 200, 0.5, asteroide.png
-nave, 40, 180

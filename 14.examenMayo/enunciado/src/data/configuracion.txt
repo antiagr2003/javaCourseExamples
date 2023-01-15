@@ -1,3 +1,0 @@
-manzanas: 3
-ladrillos: 2
-fps: 60
