@@ -17,7 +17,7 @@ Decidir el mejor constructor para este objeto.
 
 Para pintar el cuadrado en un entorno gráfico (Dibujo) se utilizarán las clases suministradas por el profesor. Se podrá analizar el código (¿Cómo lo hace?) o la documentación facilitada de la carpeta docs (¿Qué hace?). ¿Qué os resulta más sencillo?
 
-![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/01.claseBasicaDibujo/diagramaSecuencia.jpg)
+![alt text](diagramaSecuencia.jpg)
 
 ##### Se pide
 1. Implementar las clases Cuadrado, AppDibujo01 y AppDibujo02.
@@ -39,6 +39,6 @@ javac *.java
 
 Nótese que el programa sólo es capaz de pintar un cuadrado de forma simultánea. No se pueden mostrar los tres a la vez.
 
-![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/01.claseBasicaDibujo/output.jpg)
+![alt text](output.jpg)
 
 
