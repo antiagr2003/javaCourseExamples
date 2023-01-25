@@ -1,8 +1,8 @@
 # Reto 1. Obtener información del objeto
 
 ## Se pide
-Trabaja con la clase App que se suministra y amplia la siguiente funcionalidad:
-- Crea un método en Personaje llamado **disparar** que dispare a oro personaje.
+Trabaja con las clases que se suministran y amplia la siguiente funcionalidad:
+- Crea un método en la clase Personaje llamado **disparar(Personaje otroPersonaje)** que dispare a otro personaje.
 - Este método restará vida al personaje disparado según el siguiente criterio:
 	+ Si le dispara con un pistola, tendrá un 50% de herir al contrario quitándole 10 de vida.
 	+ Si le dispara con una escopeta, un 50% quitándole 20 de vida.
