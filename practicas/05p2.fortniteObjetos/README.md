@@ -32,6 +32,7 @@ Ojo porque posiblemente haya que realizar algún cambio respecto al modelo en la
 - Realizar el diagrama de clases.
 - Realizar un diagrama de paquetes.
 - Programar los siguientes casos de uso:
+
         1. Crear dos personajes y meterlos en un array: The Grefg y Ampeter.
         2. Crear dos árboles y dos casas (madera y ladrillo)
         3. The Grefg 1 picará un árbol y una casa.
