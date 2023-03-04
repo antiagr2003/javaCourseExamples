@@ -1,8 +1,11 @@
+package examenInter.ui;
+
+import examenInter.objetos.Persona;
+
 import java.util.ArrayList;
 
 public class App
 {
-
 	public static void main(String[] args) 
 	{
 		System.out.println("Con arrays...");
@@ -17,6 +20,7 @@ public class App
 		personas[0] = new Persona("Luis", "1A", 22);
 		personas[1] = new Persona("Ana", "2A", 33);
 		personas[2] = new Persona("Raquel", "3A", 44);
+		personas[3] = new Persona("Raquel", "3A");
 
 		for(Persona persona : personas)
 			if (persona != null)
@@ -51,6 +55,11 @@ public class App
 
 		for(Persona persona : personas)
 			System.out.println(persona);
+
+		
+		for(int i=0; i < personas.size(); i++)
+			System.out.println(personas.get(i));
+
 
 		Persona persona = new Persona("2A");
 		int pos = personas.indexOf(persona);

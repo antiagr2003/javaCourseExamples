@@ -1,3 +1,5 @@
+package examenInter.objetos;
+
 public class Persona
 {
     public final static int EDAD_MAXIMA = 120;
@@ -71,6 +73,8 @@ public class Persona
 
         return sb.toString();
     }
+
+
 
     @Override
     public boolean equals(Object obj)
