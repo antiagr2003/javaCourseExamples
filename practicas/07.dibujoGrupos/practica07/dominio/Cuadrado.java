@@ -2,6 +2,9 @@ package practica07.dominio;
 
 public class Cuadrado extends Figura
 { 
+	public static final int LADO_MIN = 2; 
+	public static final int LADO_MAX = 600; 
+
 	private int lado;
 
 	/** 
@@ -16,10 +19,10 @@ public class Cuadrado extends Figura
 
 	public void setLado(int lado)
 	{
-		if(x>1 && x<600)
+		if(x >= LADO_MIN && x < LADO_MAX)
 			this.lado = lado;
 		else
-			this.lado = 2;
+			this.lado = LADO_MIN;
 	}
 
 	public int getLado()

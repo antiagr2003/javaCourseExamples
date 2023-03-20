@@ -15,7 +15,8 @@ public class Lienzo extends Canvas
 	public void pintar(String grupo, Figura figura)
 	{
 		Collection<Figura> figurasGrupo = figuras.get(grupo);
-		if(figurasGrupo==null)
+
+		if(figurasGrupo == null)
 		{
 			figurasGrupo = new java.util.ArrayList<Figura>();
 			figurasGrupo.add(figura);
@@ -34,7 +35,7 @@ public class Lienzo extends Canvas
 
 	public void setVisibleTodasFiguras(boolean visible)
 	{
-		for(Collection<Figura> todasFiguras:figuras.values())
+		for(Collection<Figura> todasFiguras : figuras.values())
 			for(Figura figura:todasFiguras)
 				figura.setVisible(visible);
 	}
@@ -42,7 +43,7 @@ public class Lienzo extends Canvas
 	@Override
 	public void paint(Graphics g)
 	{
-		for(Collection<Figura> todasFiguras:figuras.values())
+		for(Collection<Figura> todasFiguras : figuras.values())
 			for(Figura figura:todasFiguras)
 				if(figura.isVisible())
 					figura.pintar(g);

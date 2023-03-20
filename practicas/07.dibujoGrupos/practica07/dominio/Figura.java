@@ -2,6 +2,11 @@ package practica07.dominio;
 
 public abstract class Figura
 {
+	public static final int X_MIN = 1; 
+	public static final int X_MAX = 800; 
+	public static final int Y_MIN = 1; 
+	public static final int Y_MAX = 600; 
+
 	protected int x;
 	protected int y;
 	protected boolean relleno;
@@ -37,13 +42,13 @@ public abstract class Figura
 
 	public void setX(int x)
 	{
-		if(x>0 && x<800)
+		if(x >= X_MIN && x <= X_MAX)
 			this.x = x;
 	}
 
 	public void setY(int y)
 	{
-		if(y>0 && y<600)
+		if(y >= Y_MIN && y <= Y_MAX)
 			this.y = y;
 	}
 

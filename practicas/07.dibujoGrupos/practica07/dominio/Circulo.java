@@ -2,6 +2,9 @@ package practica07.dominio;
 
 public class Circulo extends Figura
 {
+	public static final int RADIO_MIN = 2; 
+	public static final int RADIO_MAX = 600; 
+	
 	private int radio;
 
 	/** 
@@ -18,10 +21,10 @@ public class Circulo extends Figura
 
 	public void setRadio(int radio)
 	{
-		if(x>1 && x<600)
+		if(x > RADIO_MIN && x < RADIO_MAX)
 			this.radio = radio;
 		else
-			this.radio = 2;
+			this.radio = RADIO_MIN;
 	}
 
 	public int getRadio()
