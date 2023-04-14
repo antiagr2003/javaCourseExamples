@@ -1,0 +1,6 @@
+planeta, 500, 40, 0.05, planet1.png
+planeta, 370, 10, 0.10, planet2.png
+asteroide, 100, 100, 0.5, asteroide.png
+asteroide, 300, 300, 0.5, asteroide.png
+asteroide, 500, 200, 0.5, asteroide.png
+nave, 100, 200
