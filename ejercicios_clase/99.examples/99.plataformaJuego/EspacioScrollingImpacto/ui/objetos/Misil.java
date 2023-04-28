@@ -1,7 +1,5 @@
 package ui.objetos;
 
-import app.Juego;
-
 public class Misil extends Sprite
 {
     private static final String NOMBRE_IMAGEN = "misil.png";

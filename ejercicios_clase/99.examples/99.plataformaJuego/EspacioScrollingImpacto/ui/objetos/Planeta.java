@@ -15,7 +15,13 @@ public class Planeta extends Sprite
         this(x, y, VELOCIDAD_DEFAULT, NOMBRE_IMAGEN);
     }
 
-    public Planeta(String...elementos) {
+    public Planeta(String...elementos) 
+    {
         super(elementos);
+    }
+
+    public void colision()
+    {
+
     }
 }

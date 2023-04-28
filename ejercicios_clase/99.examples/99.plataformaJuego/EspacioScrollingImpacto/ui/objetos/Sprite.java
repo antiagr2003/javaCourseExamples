@@ -3,9 +3,6 @@ package ui.objetos;
 import app.Juego;
 
 import java.awt.*;
-import java.awt.geom.Rectangle2D;
-import java.util.Arrays;
-import javax.swing.Timer;
 import javax.swing.ImageIcon;
 
 public abstract class Sprite
@@ -25,7 +22,8 @@ public abstract class Sprite
         this.init(x, y, velocidad, ficheroImagen);
     }
 
-    public Sprite(String...elementos) {
+    public Sprite(String...elementos) 
+    {
         this.parse(elementos);
     }
 
@@ -124,5 +122,5 @@ public abstract class Sprite
         }
     }
 
-    public void colision() {}
+    public abstract void colision();
 }

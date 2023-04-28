@@ -26,8 +26,14 @@ public class Nave extends Sprite
         this(x, y, VELOCIDAD_DEFAULT, NOMBRE_IMAGEN);
     }
 
-    public Nave(String...elementos) {
+    public Nave(String...elementos) 
+    {
         super(elementos);
+    }
+
+    public static Nave of(String...elementos)
+    {
+         return new Nave(elementos);
     }
 
     @Override
@@ -107,10 +113,14 @@ public class Nave extends Sprite
             colisionando = true;
             Thread t = new Thread(() ->
             {
-                for (int i = 0; i < 6; i++) {
-                    try {
+                for (int i = 0; i < 6; i++) 
+                {
+                    try 
+                    {
                         Thread.sleep(100);
-                    } catch (InterruptedException e) {
+                    }
+                    catch (InterruptedException e) 
+                    {
                         e.printStackTrace();
                     }
                     visible = !visible;

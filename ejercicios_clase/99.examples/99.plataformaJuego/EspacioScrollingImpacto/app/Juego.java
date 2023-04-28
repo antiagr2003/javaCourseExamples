@@ -2,7 +2,6 @@ package app;
 
 import ui.paneles.Tablero;
 
-import java.awt.EventQueue;
 import javax.swing.JFrame;
 
 public class Juego extends JFrame
@@ -19,7 +18,7 @@ public class Juego extends JFrame
         this.setTitle("Juego del Espacio");
         this.setSize(ANCHO, ALTO);
 
-        this. setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null);
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }

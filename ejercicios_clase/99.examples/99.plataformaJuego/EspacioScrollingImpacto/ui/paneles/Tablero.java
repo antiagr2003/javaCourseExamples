@@ -10,12 +10,10 @@ import java.awt.Graphics2D;
 import java.awt.Toolkit;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.util.ArrayList;
+
 import java.util.LinkedList;
-import java.util.List;
 
 import javax.swing.JPanel;
-import javax.swing.Timer;
 
 public class Tablero extends JPanel implements Runnable
 {
